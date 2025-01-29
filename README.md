@@ -2,11 +2,14 @@
 <br clear="both">
 
 <h1 align="left"> - Curso tecnico Desenvolvimento de sistemas</h1><br>SENAC Turma 0152 Professor Sebastião
-
+<br clear="both">
 
 ###
 
-Vinícius Estevam da Silva - 2024 - Estudos envolvendo HTML,CSS
+<h4 align="left">Vinícius Estevam da Silva - 2024 - Estudos envolvendo HTML,CSS
+<br clear="both">
+
+<img align="right" height="150" src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif"  />
 
 <div align="left">
   <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" height="50" alt="javascript logo"  />
