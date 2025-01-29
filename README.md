@@ -1,8 +1,8 @@
 
 <br clear="both">
 
-<h1 align="left"> - Curso tecnico Desenvolvimento de sistemas</h1>
-<h1 align="left"> - SENAC Turma 0152 Professor Sebastião/h1>
+<h1 align="left"> - Curso tecnico Desenvolvimento de sistemas</h1><br>SENAC Turma 0152 Professor Sebastião
+
 
 ###
 
