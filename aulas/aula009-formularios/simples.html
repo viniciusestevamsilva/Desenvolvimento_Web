@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
 
-    <head>
-    <!-- Definição do charset para UTF-8, importante para caracteres especiais-->
-     <meta charset="UTF-8" />
-     <!-- Definido a visualizção para dispositivos móveis -->
-     <meta nome="'viewport" content="width=device-width, initial-scale=1.0"/>
-     <title>Formulário Simples</title>
-    </head>
-    <body>
+    <!-- Definição do charset para UTF-8, Importante para caracteres especiais -->
+    <meta charset="UTF-8" />
+    <!-- Definindo a visualização para dispositivos moveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Simples</title>
 
-        <!-- Título principal da página -->
-         <h1>Formulário de Contato</h1>
+  </head>
 
-        <!-- Início do formulário. O atributo 'action' define para onde os dados serão enviados-->
-         <form action="/enviar" method="post">
-            <!-- O método 'post' envia os dados de forma seura, sem expor na URL-->
+  <body>
+    <!-- Titulo principal da página -->
+    <h1>Formulário de Contato</h1>
+    <!-- Início do formulário. O atributo 'action' define para onde os dados serão enviados -->
+    <form action="/enviar" method="post">
 
-            <!-- Campo de entrada para o nome-->
-             <label for="name">Nome:></label>
-             <input type="text" id="nome" name="name" required \>
-             <br /><br />
+      <!--O método 'post' envia os dados de forma segura, sem expon na URL -->
+      <!-- Campo de entrada para o nome -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      <br /><br />
 
-            <!-- Campo de entrada para o e-mail-->
-         </form>
-    </body>
+      <!--Campo de entrada para o e-mail-->
+     for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <!-- Área de texto para a mensagem -->
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <br /><br />
+
+      <!-- Botão para enviar o formulário-->
+      <button type="submit">Enviar</button>
+
+    </form>
+
+  </body>
+  
 </html>
