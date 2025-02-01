@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Site da Amazon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Mini Amazon</div>
+        <ul class="nav-links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Carrinho</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Bem-vindo à Mini Amazon!</h1>
+        <p>Encontre os melhores produtos com preços incríveis!</p>
+    </section>
+
+    <!-- Produtos -->
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>R$ 99,90</p>
+            <button onclick="addToCart('Produto 1', 99.90)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>R$ 129,90</p>
+            <button onclick="addToCart('Produto 2', 129.90)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>R$ 79,90</p>
+            <button onclick="addToCart('Produto 3', 79.90)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <!-- Carrinho -->
+    <section id="cart">
+        <h2>Carrinho</h2>
+        <ul id="cart-items">
+            <!-- Itens do carrinho serão exibidos aqui -->
+        </ul>
+        <p id="total">Total: R$ 0,00</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
