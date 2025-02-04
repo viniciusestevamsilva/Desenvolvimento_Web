@@ -1,0 +1,28 @@
+/* Estilos usando IDs*/
+#titulo {
+    color: #2c3e50;
+    font-size: 2em;
+    text-align: center;
+}
+
+#rodape {
+    background-color: #34495e;
+    color: 2em;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos usando Classes */
+.secao {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 10px;
+}
+
+.secao h2 {
+    color: #16a085;
+}
+
+.secao p {
+    color: #7f8c8d;
+}
