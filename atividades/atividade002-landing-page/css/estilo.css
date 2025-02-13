@@ -1,0 +1,27 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: #ffffff;
+    background-color: #3f3f3f;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+nav {
+    background-color: #000000;
+    color: #ffffff;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    border-radius: 5px;
+}
+.fonte {
+    font-family: 'Papyrus', fantasy;
+}
+
