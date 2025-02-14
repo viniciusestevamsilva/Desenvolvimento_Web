@@ -1,7 +1,7 @@
 body {
     font-family: "Arial", sans-serif;
     color: #ffffff;
-    background-color: #3f3f3f;
+    background-color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -9,39 +9,41 @@ body {
 header {
     background-color: #000000;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 
-figure {
-    justify-content: left;
-    padding: 10px;
-    margin: 10px;
+picture {
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
 }
-.fonte {
+.fonte h3 {
     font-family: 'Times New Roman', Times, serif;
 }
 
 nav {
-    background-color: #222222;
+    background-color: #000000;
     color: #ffffff;
     padding: 10px;
     display: flex;
-    text-align: center;
     justify-content: center;
+
 }
 
 nav a {
-    color: #ffffff;
+    color: #000000;
     margin: 0 15px;
+    padding: 5px 15px;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
-    padding: 5px 10px;
+    display: inline-block;
+    background-color:#ffffff;
 }
 
 nav a:hover {
-    background-color: #444444;
+    background-color: #000000;
 }
 
 main {
@@ -49,11 +51,18 @@ main {
 }
 
 section {
-    margin-bottom: 30px;
+    background-color: #000000;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
-h3 {
-    color: #ffcc00; /* Cor dourada para títulos */
+figure {
+    display: flex;
+    border-radius: 20px;
+    justify-content: right;
+
 }
 
 footer {
