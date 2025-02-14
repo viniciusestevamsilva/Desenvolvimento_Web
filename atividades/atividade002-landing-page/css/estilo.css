@@ -1,53 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+}
+
+nav {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #000000;
+    margin: 0 30px;
+    padding: 0px 30px;
+    border-radius: 5px;
+    background-color:#ffffff;
+}
+
+nav a:hover {
+    background-color: #313131;
+    color: #ffffff;
+}
+
+picture img {
+    height: 90%;
+    width: 100%;
+}
+
+
 body {
-    font-family: "Arial", sans-serif;
     color: #ffffff;
     background-color: #000000;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #000000;
-    color: white;
-    text-align: left;
-    padding: 20px;
-}
-
-picture {
-    display: flex;
-    border-radius: 20px;
-    justify-content: center;
-}
-.fonte h3 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-nav {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-
-}
-
-nav a {
-    color: #000000;
-    margin: 0 15px;
-    padding: 5px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    display: inline-block;
-    background-color:#ffffff;
-}
-
-nav a:hover {
-    background-color: #000000;
-}
-
 main {
+    justify-content: center;
     padding: 20px;
+    margin: 20px;
 }
 
 section {
@@ -57,14 +56,40 @@ section {
     justify-content: center;
     border-radius: 10px;
 }
+section h2 {
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+article p {
+    color: #ffffff;
+    background-color:#313131;
+}
 
 figure {
     display: flex;
-    border-radius: 20px;
-    justify-content: right;
-
+    padding: 50px;
+}
+section .voltar-inicio {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 0 30px;
+    padding: 0px 30px;
 }
 
+.voltar-inicio:hover {
+    background-color: #313131;
+    color: #ffffff;
+}
 footer {
     background-color: #000000;
     color: #ffffff;
