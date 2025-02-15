@@ -15,7 +15,7 @@ body {
 /*Estilo do cabeçalho*/
 header {
     text-align: center;
-    background: #0073e6;
+    background: #cf67cf;
     color: white;
     padding: 20px;
     margin-bottom: 20px;
@@ -59,7 +59,7 @@ section {
 /*Rodapé*/
 footer {
     text-align: center;
-    background: #333;
+    background: #d6d59e;
     color: white;
     padding: 10px;
     margin-top: 20px;
