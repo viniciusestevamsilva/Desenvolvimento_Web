@@ -107,13 +107,13 @@ footer {
 .float-left img {
     float: left;
     margin-right: 15px;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
 
 .float-right img {
     float: right;
     margin-left: 15px;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
 }
