@@ -26,8 +26,8 @@ nav a {
 }
 
 section {
-    background-color: #0099ff;
-    color: #f4fff4;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
     margin: 20px;
     display: flex;
@@ -40,4 +40,14 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 50px; margin-top: 50px;
+}
+
+.caixa{
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.borda-pontilhada{
+    border:5px solid #000000
 }
