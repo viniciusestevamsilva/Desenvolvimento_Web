@@ -14,7 +14,8 @@ body {
 body h1 {
     color: #ffffff;
     text-align: center;
-    margin: 50px;
+    margin-top: 60px;
+    margin-bottom: 1px;
 }
 /* Estilo do header */
 header {
@@ -22,10 +23,6 @@ header {
     color: #f4fff4; /* Cor de texto branca */
     padding: 10px; /* Espaçamento interno do cabeçalho */
     text-align: center; /* Centraliza o texto dentro do cabeçalho */
-}
-
-header h1 {
-    
 }
 
 /* Estilo de navegação */
