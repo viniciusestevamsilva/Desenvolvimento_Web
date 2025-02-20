@@ -1,53 +1,109 @@
+/* Resetando margens, paddings, estilo de texto e fonte padrão para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font: 1.2em;
+    margin: 0; /* Remove margens externas de todos os elementos */
+    padding: 0; /* Remove os preenchimentos internos de todos os elementos */
+    text-decoration: none; /* Remove sublinhados de links e outros elementos */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para todos os elementos */
 }
 
-header {
-    background-color: #0099ff;
-    color: #f4fff4;
-    padding: 20px;
+/* Estilo de fundo para o corpo da página */
+body {
+    background-color: #2b2a2a; /* Define um fundo escuro para a página */
 }
 
-nav {
-    background-color: #0099ff;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-nav a {
-    color: #f4fff4;
-    padding: 10px;
-    margin: 20px;
-}
-
-section {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px;
-}
-
-footer {
-    background-color: #0099ff;
+body h1 {
     color: #ffffff;
     text-align: center;
-    padding: 50px; margin-top: 50px;
+    margin: 50px;
+}
+/* Estilo do header */
+header {
+    background-color: #7046d4; /* Cor de fundo roxa para o cabeçalho */
+    color: #f4fff4; /* Cor de texto branca */
+    padding: 10px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
 }
 
-.caixa{
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
+header h1 {
+    
 }
 
-.borda-pontilhada{
-    border:5px solid #000000
+/* Estilo de navegação */
+nav {
+    background-color: #7046d4; /* Cor de fundo roxa para a barra de navegação */
+    display: flex; /* Usando flexbox para distribuir os itens */
+    justify-content: center; /* Centraliza os links na barra de navegação */
+    padding: 10px; /* Espaçamento interno da barra de navegação */
+}
+
+/* Estilo para os links de navegação */
+nav a {
+    color: #f4fff4; /* Cor de texto branca para os links */
+    padding: 10px; /* Espaçamento interno para os links */
+}
+
+/* Estilo de interação ao passar o mouse sobre os links */
+nav a:hover {
+    background-color: #8f68eb; /* Cor de fundo roxa mais clara no hover */
+    padding: 12px; /* Aumenta o padding ao passar o mouse */
+    margin: 12px; /* Aumenta o espaço entre os links no hover */
+}
+
+/* Estilo para os artigos */
+article {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 20px; /* Espaçamento externo ao redor do artigo */
+    padding: 10px; /* Espaçamento interno do artigo */
+    height: 30%; /* Define a altura como 30% da altura disponível */
+    width: 30%; /* Define a largura como 30% da largura disponível */
+}
+
+/* Estilo das seções */
+section {
+    color: #ffffff; /* Cor do texto branca */
+    padding: 10px; /* Espaçamento interno da seção */
+    margin: 10px; /* Espaçamento externo ao redor da seção */
+    display: flex; /* Usa flexbox para dispor os itens */
+    justify-content: center; /* Centraliza o conteúdo da seção */
+    border-radius: 15px; /* Bordas arredondadas para a seção */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #7046d4; /* Cor de fundo roxa para o rodapé */
+    color: #ffffff; /* Cor de texto branca */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 50px; /* Espaçamento interno no rodapé */
+    margin-top: 50px; /* Espaçamento superior em relação ao conteúdo anterior */
+}
+
+/* Estilo de artigos com borda */
+article.borda-solida {
+    border: 5px solid #7046d4; /* Define uma borda sólida roxa ao redor do artigo */
+    border-radius: 20px; /* Bordas arredondadas mais suaves */
+}
+
+/* Estilo das imagens dentro do artigo */
+.img-article {
+    float: left; /* Faz a imagem flutuar à esquerda */
+    margin: 50px; /* Espaçamento ao redor da imagem */
+    width: 55px; /* Largura da imagem */
+    height: 100%; /* Altura da imagem é 100% da altura disponível */
+}
+
+/* Estilo da imagem do logo */
+#logo img {
+    margin: 15px; /* Espaçamento ao redor da imagem do logo */
+    width: 5%; /* Largura da imagem é 5% do tamanho do contêiner */
+    display: flex; /* Usando flexbox para exibir a imagem */
+    justify-content: left; /* Alinha a imagem à esquerda */
+}
+
+/* Estilo para a imagem do topo */
+#img-topo img {
+    display: inline; /* Exibe a imagem em linha (não ocupa toda a largura) */
+    justify-content: center; /* Centraliza a imagem */
+    margin: 50px; /* Espaçamento ao redor da imagem */
+    width: 300px; /* Largura da imagem */
+    height: 500px; /* Altura da imagem é 100% da altura disponível */
 }
