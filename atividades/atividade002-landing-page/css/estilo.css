@@ -116,6 +116,15 @@ article p{
     color: #fcfc00;
 }
 
+#logo img {
+    float: left;
+    margin: 15px; /* Espaçamento ao redor da imagem do logo */
+    margin-bottom: 1px;
+    width: 5%; /* Largura da imagem é 5% do tamanho do contêiner */
+    display: flex; /* Usando flexbox para exibir a imagem */
+    justify-content: left; /* Alinha a imagem à esquerda */
+}
+
 /*============================================ FOOTER ============================================*/
 
 footer {
