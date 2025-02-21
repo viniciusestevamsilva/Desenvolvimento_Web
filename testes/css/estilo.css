@@ -14,36 +14,45 @@ body {
 body h1 {
     color: #ffffff;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 90px;
     margin-bottom: 1px;
 }
 /* Estilo do header */
 header {
-    background-color: #7046d4; /* Cor de fundo roxa para o cabeçalho */
+    background-color: #0073e6; /* Cor de fundo roxa para o cabeçalho */
     color: #f4fff4; /* Cor de texto branca */
-    padding: 10px; /* Espaçamento interno do cabeçalho */
-    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    padding: 30px; /* Espaçamento interno do cabeçalho */ /* Centraliza o texto dentro do cabeçalho */
+}
+
+header figure h1 {
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 /* Estilo de navegação */
-nav {
-    background-color: #7046d4; /* Cor de fundo roxa para a barra de navegação */
+header nav {
+    background-color: #0073e6; /* Cor de fundo roxa para a barra de navegação */
     display: flex; /* Usando flexbox para distribuir os itens */
-    justify-content: center; /* Centraliza os links na barra de navegação */
+    justify-content: right; /* Centraliza os links na barra de navegação */
     padding: 10px; /* Espaçamento interno da barra de navegação */
 }
 
 /* Estilo para os links de navegação */
-nav a {
-    color: #f4fff4; /* Cor de texto branca para os links */
-    padding: 10px; /* Espaçamento interno para os links */
+header nav a {
+    background-color: #f4fff4;
+    color: #0073e6; /* Cor de texto branca para os links */
+    padding: 0px 20px;/* Espaçamento interno para os links */
+    margin: 0px 20px;
+    border-radius: 15px;
 }
 
 /* Estilo de interação ao passar o mouse sobre os links */
-nav a:hover {
-    background-color: #8f68eb; /* Cor de fundo roxa mais clara no hover */
-    padding: 12px; /* Aumenta o padding ao passar o mouse */
-    margin: 12px; /* Aumenta o espaço entre os links no hover */
+header nav a:hover {
+    background-color: #0b3763; /* Cor de fundo roxa mais clara no hover */
+    color: #f4fff4;
+    padding: 0px 30px;/* Espaçamento interno para os links */
+    margin: 0px 30px;
+    border-radius: 15px;
 }
 
 /* Estilo para os artigos */
@@ -67,7 +76,7 @@ section {
 
 /* Estilo do rodapé */
 footer {
-    background-color: #7046d4; /* Cor de fundo roxa para o rodapé */
+    background-color: #0073e6; /* Cor de fundo roxa para o rodapé */
     color: #ffffff; /* Cor de texto branca */
     text-align: center; /* Centraliza o texto no rodapé */
     padding: 50px; /* Espaçamento interno no rodapé */
@@ -76,7 +85,7 @@ footer {
 
 /* Estilo de artigos com borda */
 article.borda-solida {
-    border: 5px solid #7046d4; /* Define uma borda sólida roxa ao redor do artigo */
+    border: 5px solid #0073e6; /* Define uma borda sólida roxa ao redor do artigo */
     border-radius: 20px; /* Bordas arredondadas mais suaves */
 }
 
@@ -90,7 +99,9 @@ article.borda-solida {
 
 /* Estilo da imagem do logo */
 #logo img {
+    float: left;
     margin: 15px; /* Espaçamento ao redor da imagem do logo */
+    margin-bottom: 1px;
     width: 5%; /* Largura da imagem é 5% do tamanho do contêiner */
     display: flex; /* Usando flexbox para exibir a imagem */
     justify-content: left; /* Alinha a imagem à esquerda */
@@ -103,4 +114,21 @@ article.borda-solida {
     margin: 50px; /* Espaçamento ao redor da imagem */
     width: 300px; /* Largura da imagem */
     height: 500px; /* Altura da imagem é 100% da altura disponível */
+}
+
+.box-fixo a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/*Clear para evitar sobreposição*/
+.clear {
+    clear: both;
 }
