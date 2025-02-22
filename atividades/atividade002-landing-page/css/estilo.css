@@ -71,6 +71,14 @@ section h1 {
     font-size: 3rem;
 }
 
+section h2 {
+    margin: 30px;
+    margin-top: 1px;
+    margin-bottom: 200px;
+    text-align: right;
+}
+
+
 section table {
     margin: 80px;
     margin-bottom: 0PX;
@@ -88,14 +96,9 @@ section table img{
     height: 250px;
 }
 
-section h2 {
-    margin: 30px;
-    margin-top: 1px;
-    margin-bottom: 100px;
-}
-
 
 /*============================================ ARTICLE ============================================*/
+
 article p{
     text-align: center;
     margin-bottom: 25px;
@@ -104,16 +107,30 @@ article p{
     color: #ffffff;
 }
 
+article h2 a{
+    margin: 30px;
+    text-align: right;
+}
+
 /*============================================ CLASSE ============================================*/
 
 .voltar-inicio {
-    text-align: center;
     color: #d2d28e;
-    border-radius: 5px;
     text-decoration: none;
 }
 .voltar-inicio:hover {
     color: #fcfc00;
+}
+
+/*============================================ ID ============================================*/
+
+#img-separadora img{
+    float: center;
+    margin: 15px; /* Espaçamento ao redor da imagem do logo */
+    margin-bottom: 1px;
+    width: 5%; /* Largura da imagem é 5% do tamanho do contêiner */
+    height: 5%;
+
 }
 
 #logo img {
@@ -121,15 +138,22 @@ article p{
     margin: 15px; /* Espaçamento ao redor da imagem do logo */
     margin-bottom: 1px;
     width: 5%; /* Largura da imagem é 5% do tamanho do contêiner */
-    display: flex; /* Usando flexbox para exibir a imagem */
-    justify-content: left; /* Alinha a imagem à esquerda */
 }
 
+
+#img-epoca img {
+    display: inline; /* Exibe a imagem em linha (não ocupa toda a largura) */
+    justify-content: center; /* Centraliza a imagem */
+    margin: 50px; /* Espaçamento ao redor da imagem */
+    margin-bottom: 15px;
+    width: 300px; /* Largura da imagem */
+    height: 500px; /* Altura da imagem é 100% da altura disponível */
+}
 /*============================================ FOOTER ============================================*/
 
 footer {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
-    padding: 50px; margin-top: 50px;
+    padding: 80px; margin-top: 150px;
 }
