@@ -22,6 +22,7 @@ header nav h1 {
     text-align: left;
     margin-top: 50px;
     margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 0px;
 }
 
@@ -80,12 +81,12 @@ section h2 {
 
 
 section table {
-    margin: 80px;
+    display: inline;
     margin-bottom: 0PX;
 }
 section table p {
     font-size: 1.0em;
-    margin: 80px;
+    margin: 90px 90px;
     margin-top: 6px;
 }
 section table img{
@@ -124,30 +125,30 @@ article h2 a{
 
 /*============================================ ID ============================================*/
 
+
+#logo img {
+    float: left;
+    margin: 15px; 
+    margin-bottom: 1px;
+    width: 5%;
+}
+
 #img-separadora img{
     float: center;
-    margin: 15px; /* Espaçamento ao redor da imagem do logo */
+    margin: 15px; 
     margin-bottom: 1px;
-    width: 5%; /* Largura da imagem é 5% do tamanho do contêiner */
+    width: 5%; 
     height: 5%;
 
 }
 
-#logo img {
-    float: left;
-    margin: 15px; /* Espaçamento ao redor da imagem do logo */
-    margin-bottom: 1px;
-    width: 5%; /* Largura da imagem é 5% do tamanho do contêiner */
-}
-
-
 #img-epoca img {
-    display: inline; /* Exibe a imagem em linha (não ocupa toda a largura) */
-    justify-content: center; /* Centraliza a imagem */
-    margin: 50px; /* Espaçamento ao redor da imagem */
+    display: inline;
+    justify-content: center;
+    margin: 50px;
     margin-bottom: 15px;
-    width: 300px; /* Largura da imagem */
-    height: 500px; /* Altura da imagem é 100% da altura disponível */
+    width: 300px;
+    height: 500px;
 }
 /*============================================ FOOTER ============================================*/
 
