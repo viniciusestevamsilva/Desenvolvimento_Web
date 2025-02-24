@@ -60,7 +60,8 @@ main picture img {
 
 /*============================================ SECTION ============================================*/
 section {
-    margin: 10px;
+    margin-right: 80px;
+    margin-left: 80px;
     border-radius: 50px;
     
 }
@@ -73,21 +74,20 @@ section h1 {
 }
 
 section h2 {
-    margin: 30px;
+    margin: 80px;
     margin-top: 1px;
     margin-bottom: 200px;
     text-align: right;
 }
-
 
 section table {
     display: inline;
     margin-bottom: 0PX;
 }
 section table p {
-    font-size: 1.0em;
+    font-size: 1em;
     margin: 90px 90px;
-    margin-top: 6px;
+    margin-top: 10px;
 }
 section table img{
     text-align: center;
