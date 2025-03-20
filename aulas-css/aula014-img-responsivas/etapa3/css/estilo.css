@@ -1,56 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Grante que padding e borda não afete o tamanho total dos elementos */
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Utilizando toda a altra da janela */
-    height: 100vh;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
-.container {
-    text-align: center;
-    width: 80%;
-    /* Limita a largura da caixa */
-    max-width: 1000px;
-    background-color: #ffffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Estilo para o header com imagem de fundo*/
+.principal {
+  /* URL da imagem de fundo */
+  background-image: URL("https://img.freepik.com/free-photo/majestic-mountain-range-towering-tranquil-meadow-generated-by-ai_188544-29941.jpg?t=st=1742511405~exp=1742515005~hmac=063cb2acbc71421c992058efe50aa1a9dc422a6d15adc2e96832419ba0b02601&w=996");
+  /* Faz a imagem cobrir todo o conteiner */
+  background-size: cover;
+  /* Centraliza a imagem dentro do conteiner*/
+  background-position: center;
+  /* Garante que o header ocupe 100% da largura da tela */
+  width: 100%;
+  /* Altura fixa do header  */
+  height: 400px;
+  display: flex;
+  /* Alinha o conteudo horizontalment*/
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-    font-size: 2.5em;
-    color: #333;
+.conteudo-principal {
+  text-align: center;
+  padding: 20px;
 }
 
-p {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 20px;
+.principal h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
-/* Estilos para a imagem responsiva */
-.image-container {
-    /* O conteiner da imagem ocupa 100% da largura do
-    conteiner pai */
-    width: 100%;
-    /* Evita que a imagem tenha espaços abaixo */
-    height: 300px;
-    /* Oculta qualquer parte da imagem que ultrapasse os
-     limites do conteiner */
-    overflow: hidden;
+.principal p {
+    font-size: 1.5em;
+}
+.sobre-nos {
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 20px;
 }
 
-/* Estilos para a imagem responsiva */
-img {
-    /* A imagem vai ocupar 100% da largura do contêiner */
-    width: 100%;
-    /* Evita que a imagem tenha espaços abaixo */
-    height: 300px;
-    /* Faz com que a imagem preencjha o conteinr, cortando
-    onde nescessario */
-    object-fit: cover;
+.sobre-nos h2 {
+  font-size: 2.5em;
+  color: #555;
+}
+
+.sobre-nos p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.rodape {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
