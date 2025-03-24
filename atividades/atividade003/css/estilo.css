@@ -41,15 +41,35 @@ body {
 }
 
 
-.img-home {
+#img-home {
     /* URL da imagem de fundo */
-    background-image: URL("");
+    background-image: URL("https://img.freepik.com/fotos-gratis/foto-em-escala-de-cinza-do-interior-da-arquitetura-parametrica_181624-54989.jpg?t=st=1742846692~exp=1742850292~hmac=520174bc162ed00d66f62abc7faf48e4d98be3a06a2c33e8c198732ae567d1d5&w=1380");
     /* Faz a imagem cobrir todo o conteiner */
     background-size: cover;
     /* Centraliza a imagem dentro do conteiner*/
     background-position: center;
     /* Garante que o header ocupe 100% da largura da tela */
+    margin-top: 20px;
     width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#img-home h2 {
+    font-size: 2em;
+    margin:30px;
+    color: #fff;
+}
+
+#img-home p {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top:30px;
+    margin-left: 300px;margin-right: 300px;
+    padding: 5px;
+    color: #fff;
 }
 
 .img-portifolio {
@@ -67,5 +87,5 @@ footer {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
-    padding: 50px; margin-top: 10px;
+    padding: 40px; margin-top: 10px;
 }
