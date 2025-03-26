@@ -47,7 +47,12 @@ table {
 
 table p {
     font-size: 1.2rem;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 90px;
+    margin-left: 50px;
+    color: #000000;
 }
 
 table h2 {
@@ -58,19 +63,14 @@ table h2 {
 
 table img{
     text-align: center;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-top: 25px;
     margin-bottom: 15px;
     border-radius: 5px;
 }
 
-article p{
-    text-align: center;
-    margin-bottom: 15px;
-    margin-right: 80px;
-    margin-left: 50px;
-    color: #000000;
-}
+
+
 
 .sombra-blur {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -125,6 +125,7 @@ article p{
     width: 200px;
     height: 200px;
 }
+
 
 footer {
     background-color: #ffffff;
