@@ -38,6 +38,7 @@ body {
 table {
     width: 80%;
     margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 15px;
     border-collapse: collapse;
     border-radius: 5px;
@@ -52,6 +53,7 @@ table p {
     margin-bottom: 15px;
     margin-right: 90px;
     margin-left: 50px;
+    padding: 0;
     color: #000000;
 }
 
@@ -63,7 +65,7 @@ table h2 {
 
 table img{
     text-align: center;
-    margin-left: 90px;
+    margin-left: 10px;
     margin-top: 25px;
     margin-bottom: 15px;
     border-radius: 5px;
