@@ -76,62 +76,6 @@ table img {
   border-radius: 5px;
 }
 
-.sombra-blur {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-#img-home {
-  background-image: URL("https://img.freepik.com/fotos-gratis/foto-em-escala-de-cinza-do-interior-da-arquitetura-parametrica_181624-54989.jpg?t=st=1742846692~exp=1742850292~hmac=520174bc162ed00d66f62abc7faf48e4d98be3a06a2c33e8c198732ae567d1d5&w=1380");
-  background-size: cover;
-  background-position: center;
-  margin-top: 20px;
-  width: 100%;
-  height: 450px;
-  display: flex;
-  justify-content: left;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#img-home h2 {
-  font-size: 2em;
-  margin: 30px;
-  color: #fff;
-}
-
-#img-home p {
-  display: inline-block;
-  font-size: 1.2em;
-  margin-top: 30px;
-  margin-left: 300px;
-  margin-right: 300px;
-  padding: 5px;
-  color: #fff;
-}
-
-.img-fundo {
-  background-image: URL("https://img.freepik.com/fotos-gratis/elegante-sala-de-estar-escandinava-com-moveis-de-sofa-de-menta-de-design-simulam-plantas-de-mapa-de-posteres-e-eleg_1258-152157.jpg?t=st=1742960286~exp=1742963886~hmac=4eb91f06e81eb20967e79b51f7f362d1e82a7a18991a92070e1929816695aacc&w=1800");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 97.2%;
-  min-height: 600px;
-  padding: 20px;
-}
-
-.img-table {
-  width: 200px;
-  height: 200px;
-}
-
-.formulario-container {
-  width: 50%;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
 label {
   display: block;
   margin-top: 10px;
@@ -166,12 +110,37 @@ button:hover {
   background-color: #ffffff;
 }
 
+.sombra-blur {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-fundo {
+  background-image: URL("../img/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 97.2%;
+  min-height: 600px;
+  padding: 20px;
+}
+
+.img-table {
+  width: 200px;
+  height: 200px;
+}
+
+.formulario-container {
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
 .icone-cliente {
   border-radius: 100px;
   width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
 }
 
 .contato-footer {
@@ -186,6 +155,7 @@ button:hover {
 .contato-footer p strong {
   color: #000000;
 }
+
 footer {
   background-color: #f1f1f1;
   color: #000000;
