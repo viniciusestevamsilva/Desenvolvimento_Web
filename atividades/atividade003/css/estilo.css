@@ -1,218 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica,sans-serif;
-    font-size: 1em;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
 }
 
-header h2{
-    font-size: 1.2em;
-    text-align: center;
-    text-decoration: none;
-    color: #000000;
-    background-color: #ffffff;
-    padding: 30px;
-    margin-bottom: 10px;
+header h2 {
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 10px;
 }
 
 nav {
-    text-align: center;
-    text-decoration: none;
-    background-color: #4a4949;
-    padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4a4949;
+  padding: 20px;
 }
 
 nav a {
-    padding: 20px; margin: 10px;
-    color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  color: #ffffff;
 }
 
 body {
-    text-align: center;
-    background-color: #c1bdbdb4;
+  text-align: center;
+  background-color: #c1bdbdb4;
 }
 
 main {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-
-
 table {
-    width: 80%;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 15px;
-    border-collapse: collapse;
-    border-radius: 5px;
-    background: white;
-    box-shadow: 0 4px 16px rgb(0, 0, 0);
+  width: 80%;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 4px 16px rgb(0, 0, 0);
 }
 
 table p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 90px;
-    margin-left: 50px;
-    padding: 0;
-    color: #000000;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 90px;
+  margin-left: 50px;
+  padding: 0;
+  color: #000000;
 }
 
 table h2 {
-    font-size: 1.5em;
-    margin: 30px;
-    color: #ffffff;
+  font-size: 1.5em;
+  margin: 30px;
+  color: #ffffff;
 }
 
-table img{
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+table img {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
-
-
-
 
 .sombra-blur {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-
 #img-home {
-    background-image: URL("https://img.freepik.com/fotos-gratis/foto-em-escala-de-cinza-do-interior-da-arquitetura-parametrica_181624-54989.jpg?t=st=1742846692~exp=1742850292~hmac=520174bc162ed00d66f62abc7faf48e4d98be3a06a2c33e8c198732ae567d1d5&w=1380");
-    background-size: cover;
-    background-position: center;
-    margin-top: 20px;
-    width: 100%;
-    height: 450px;
-    display: flex;
-    justify-content: left;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-image: URL("https://img.freepik.com/fotos-gratis/foto-em-escala-de-cinza-do-interior-da-arquitetura-parametrica_181624-54989.jpg?t=st=1742846692~exp=1742850292~hmac=520174bc162ed00d66f62abc7faf48e4d98be3a06a2c33e8c198732ae567d1d5&w=1380");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #img-home h2 {
-    font-size: 2em;
-    margin:30px;
-    color: #fff;
+  font-size: 2em;
+  margin: 30px;
+  color: #fff;
 }
 
 #img-home p {
-    display: inline-block;
-    font-size: 1.2em;
-    margin-top:30px;
-    margin-left: 300px;margin-right: 300px;
-    padding: 5px;
-    color: #fff;
+  display: inline-block;
+  font-size: 1.2em;
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 5px;
+  color: #fff;
 }
-
 
 .img-fundo {
-    background-image: URL("https://img.freepik.com/fotos-gratis/elegante-sala-de-estar-escandinava-com-moveis-de-sofa-de-menta-de-design-simulam-plantas-de-mapa-de-posteres-e-eleg_1258-152157.jpg?t=st=1742960286~exp=1742963886~hmac=4eb91f06e81eb20967e79b51f7f362d1e82a7a18991a92070e1929816695aacc&w=1800");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 97.2%;
-    min-height: 600px;
-    padding: 20px; 
+  background-image: URL("https://img.freepik.com/fotos-gratis/elegante-sala-de-estar-escandinava-com-moveis-de-sofa-de-menta-de-design-simulam-plantas-de-mapa-de-posteres-e-eleg_1258-152157.jpg?t=st=1742960286~exp=1742963886~hmac=4eb91f06e81eb20967e79b51f7f362d1e82a7a18991a92070e1929816695aacc&w=1800");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 97.2%;
+  min-height: 600px;
+  padding: 20px;
 }
-
-/* 
-background-image: URL("https://img.freepik.com/fotos-gratis/elegante-sala-de-estar-escandinava-com-moveis-de-sofa-de-menta-de-design-simulam-plantas-de-mapa-de-posteres-e-eleg_1258-152157.jpg?t=st=1742960286~exp=1742963886~hmac=4eb91f06e81eb20967e79b51f7f362d1e82a7a18991a92070e1929816695aacc&w=1800");
-
-background-position: center;
-
-width: 100%;
-height: 600px;*/
-
 
 .img-table {
-
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
-
 
 .formulario-container {
-    width: 50%;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-  
-  
+
 label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: left;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
 }
-  
- 
+
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-  
 
 button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #000000;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
-  
+
 button:hover {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
-  
 
 .icone-cliente {
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
-
-
-
 .contato-footer {
-    margin-top: 20px;
-    font-size: 1.1em;
+  margin-top: 20px;
+  font-size: 1.1em;
 }
 
 .contato-footer p {
-    margin: 5px 0; 
+  margin: 5px 0;
 }
 
 .contato-footer p strong {
-    color: #000000;
-
+  color: #000000;
 }
 footer {
-    background-color: #f1f1f1;
-    color: #000000;
-    text-align: center;
-    padding: 40px;
+  background-color: #f1f1f1;
+  color: #000000;
+  text-align: center;
+  padding: 40px;
 }
