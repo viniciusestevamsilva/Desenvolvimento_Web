@@ -4,22 +4,27 @@
   font-family: Helvetica, sans-serif;
   font-size: 1em;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
-header h2 {
-  font-size: 1.2em;
+header h1{
+  font-size: 9em;
   text-align: center;
-  text-decoration: none;
-  color: #000000;
-  background-color: #ffffff;
-  padding: 30px;
-  margin-bottom: 10px;
+  margin-top: 100px;
+  color: #ffffff;
+}
+
+header p {
+  font-family:initial;
+  font-size: 2em;
+  text-align: center;
+  color: #ffffff;
 }
 
 nav {
   text-align: center;
   text-decoration: none;
-  background-color: #4a4949;
+  background-color: #182522;
   padding: 20px;
 }
 
@@ -32,12 +37,22 @@ nav a {
 body {
   text-align: center;
   background-color: #c1bdbdb4;
+  box-sizing: border-box;
 }
 
 main {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+section {
+  background-color: #182522;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
 
 table {
   width: 80%;
@@ -109,21 +124,76 @@ button:hover {
   color: #000000;
   background-color: #ffffff;
 }
+.container {
+  padding: 50px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Float left*/
+.img-left img {
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+/*Float rigth*/
+.img-right img {
+  float: right;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+.text-right p {
+  float: left;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.text-left {
+  margin: 50px;
+  float: right;
+  text-align: right;
+}
+
+/*Clear para evitar sobreposição*/
+.clear {
+  clear: both;
+}
+
+/*Sem float*/
+.flost-none {
+  text-align: center;
+}
+
 
 .sombra-blur {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .img-fundo {
-  background-image: URL("../img/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg");
+  background-image: URL("../img/13684532_5330832.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 97.2%;
+  width: 100%;
   min-height: 600px;
   padding: 20px;
 }
 
+.fundo-header {
+  background-image: URL("../img/5056.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 600px;
+  padding: 20px;
+}
 .img-table {
   width: 200px;
   height: 200px;
@@ -153,12 +223,12 @@ button:hover {
 }
 
 .contato-footer p strong {
-  color: #000000;
+  color: #ffffff;
 }
 
 footer {
-  background-color: #f1f1f1;
-  color: #000000;
+  background-color: #182522;
+  color: #ffffff;
   text-align: center;
   padding: 40px;
 }
