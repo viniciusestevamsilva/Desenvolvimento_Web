@@ -73,50 +73,51 @@
         <p><strong>Telefone Whatsapp:</strong> +55 (11) 9999-5678</p>
         <p><strong>Telefone de duvidas:</strong> +55 (11) 5678-5678</p>
         <br>
-        <p> Rua das Flores, 123, São Paulo, SP</p>
+        <p><strong>Avenida das Flores - N 4560° - São Roberto - MG</strong></p>
         <br>
 
         </article>
+        <article class="formulario-container">
+        
+
+          <form action="envio.php" method="POST">
+            <div>
+              <h2>Entre em Contato conosco !</h2>
+              <p>Preencha o formulário abaixo para agendar sua reunião</p>
+            </div>
+  
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+  
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+  
+            <div>
+              <label for="numero">Número (+55):</label>
+              <input type="text" id="numero" name="numero" required />
+            </div>
+  
+            <div>
+              <label for="mensagem">Previa sobre o projeto:</label>
+              <textarea id="mensagem" name="mensagem" rows="4"
+                required></textarea>
+            </div>
+  
+            <div>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </article>
+  
 
     
       </section>
 
-      <section class="formulario-container">
-        
-
-        <form action="envio.php" method="POST">
-          <div>
-            <h2>Entre em Contato conosco !</h2>
-            <p>Preencha o formulário abaixo para agendar sua reunião</p>
-          </div>
-
-          <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required />
-          </div>
-
-          <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div>
-            <label for="numero">Número (+55):</label>
-            <input type="text" id="numero" name="numero" required />
-          </div>
-
-          <div>
-            <label for="mensagem">Previa sobre o projeto:</label>
-            <textarea id="mensagem" name="mensagem" rows="4"
-              required></textarea>
-          </div>
-
-          <div>
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-      </section>
-
+      
     </main>
 
     <footer>

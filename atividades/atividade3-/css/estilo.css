@@ -1,4 +1,3 @@
-/* Reset geral */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +7,8 @@
   box-sizing: border-box;
 }
 
-/* Estilos de header */
 header h1 {
+  font-family: Times, 'Times New Roman';
   font-size: 9em;
   text-align: center;
   margin-top: 100px;
@@ -17,7 +16,7 @@ header h1 {
 }
 
 header p {
-  font-family: initial;
+  font-family: Times, 'Times New Roman';
   font-size: 2em;
   text-align: center;
   color: #ffffff;
@@ -28,7 +27,7 @@ nav {
   background-color: #182522;
   padding: 20px;
   box-shadow:15px 5px 10px rgba(0, 0, 0, 0.5);
-  
+  font-size: 1.5em;
 }
 
 nav a {
@@ -47,7 +46,6 @@ nav a:hover {
   background-color: #ffffff;
 }
 
-/* Estilos de body */
 body {
   text-align: center;
   background-color: #c1bdbdb4;
@@ -63,7 +61,7 @@ main h1 {
   padding-top: 150px;
   color:#000000;
 }
-/* Seção principal */
+
 section {
   
   color: #ffffff;
@@ -98,43 +96,20 @@ article p {
   margin-right: 50px;
 }
 
+
 .container {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
-  width: 80%; /* Largura ajustada */
+  width: 60%;
   background-color: #182522;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
 }
 
-.container-inline { 
-  text-decoration: none;
-  width: 100%; 
-  margin: 20px 0; 
-  padding: 10px; 
-} 
-
-.inline-block { 
-  display: inline-block; 
-  background-color: rgb(156, 168, 156); 
-  padding: 10px; 
-  margin-right: 10px; 
-  border-radius: 10px;
-}
-
-.inline-text p {
- text-align: left;
-  margin-top: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-
-}
-
 #img-pop img {
   display: inline;
   justify-content: center;
-  margin: 50px;
+  margin: 90px;
   margin-bottom: 15px;
   border-radius: 10px;
   border:5px solid #182522;
@@ -143,7 +118,6 @@ article p {
   height: 500px;
 }
 
-/* Bloco com imagem à esquerda e texto à direita */
 .img-text-left {
   float: left;
   margin-top: 20px;
@@ -159,8 +133,6 @@ article p {
   border:5px solid rgb(255, 255, 255);
 }
 
-
-/* Bloco com imagem à direita e texto à esquerda */
 .img-text-right {
   float: right;
   margin-top: 20px;
@@ -176,15 +148,12 @@ article p {
   border:5px solid rgb(255, 255, 255);
 }
 
-/* Limpeza de flutuação (float) */
 .clear {
   clear: both;
 }
 
 .container-comentario {
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
   width: 80%;
-  color: #00ff3c;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -210,26 +179,24 @@ article p {
 .img-text-cliente {
   float: left;
   margin-top: 20px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-left: 220px;
+  margin-right: 50px;
   margin-bottom: 20px;
 }
 
 .img-text-cliente img {
-  width: 150px;
-  height: 150px;
+  width: 190px;
+  height: 190px;
   border-radius: 10px;
   border:5px solid #182522;;
 }
 
 .conteudo-cliente p {
-  margin: 5px 0;
+  margin: 5px;
   font-size: 14px;
   color: #ffffff;
 }
 
-
-/* Fundo da imagem */
 .img-fundo {
   background-image: URL("../img/fundo-main.jpg");
   background-size: cover;
@@ -250,19 +217,22 @@ article p {
 }
 
 .formulario-container {
-  width: 50%;
+  width: 90%;
   margin: auto;
   background: #182522;
   color: #ffffff;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  margin-bottom: 120px;
 }
 
-.sombra-blur {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.formulario-container p {
+  text-align: center;
 }
 
+.formulario-container h2 {
+  text-align: center;
+}
 
 label {
   color: #ffffff;
@@ -270,6 +240,7 @@ label {
   margin-top: 10px;
   font-weight: bold;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 input[type="text"],
@@ -285,7 +256,7 @@ textarea {
 
 button {
   margin-top: 15px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border: none;
   background-color: #2d4332;
   color: white;
@@ -299,7 +270,7 @@ button:hover {
   background-color: #ffffff;
 }
 
-/* Estilos para footer */
+
 footer {
   background-color: #182522;
   color: #ffffff;
