@@ -1,0 +1,191 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Estilos de header */
+header h1 {
+  font-size: 9em;
+  text-align: center;
+  margin-top: 100px;
+  color: #ffffff;
+}
+
+header p {
+  font-family: initial;
+  font-size: 2em;
+  text-align: center;
+  color: #ffffff;
+}
+
+nav {
+  text-align: center;
+  background-color: #182522;
+  padding: 20px;
+}
+
+nav a {
+  padding: 20px;
+  margin: 10px;
+  color: #ffffff;
+}
+
+/* Estilos de body */
+body {
+  text-align: center;
+  background-color: #c1bdbdb4;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Seção principal */
+section {
+  background-color: #182522;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 150px;
+}
+
+article {
+  text-align: left;
+  line-height: 1.6;
+}
+
+article p {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+article h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+
+}
+
+.container {
+  width: 80%; /* Largura ajustada */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/* Bloco com imagem à esquerda e texto à direita */
+.img-text-left {
+  float: left;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.img-text-left img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+
+/* Bloco com imagem à direita e texto à esquerda */
+.img-right {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.img-right img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Limpeza de flutuação (float) */
+.clear {
+  clear: both;
+}
+
+/* Fundo da imagem */
+.img-fundo {
+  background-image: URL("../img/13684532_5330832.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 600px;
+  padding: 20px;
+}
+
+.fundo-header {
+  background-image: URL("../img/5056.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 600px;
+  padding: 20px;
+}
+
+.formulario-container {
+  width: 50%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+label {
+  color: #000000;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Estilos para footer */
+footer {
+  background-color: #182522;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px;
+}
