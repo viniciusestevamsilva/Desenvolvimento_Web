@@ -7,6 +7,9 @@
   box-sizing: border-box;
 }
 
+header {
+  box-shadow:15px 5px 10px rgba(0, 0, 0, 0.5);
+}
 header h1 {
   font-family: Times, 'Times New Roman';
   font-size: 9em;
@@ -26,7 +29,6 @@ nav {
   text-align: center;
   background-color: #182522;
   padding: 20px;
-  box-shadow:15px 5px 10px rgba(0, 0, 0, 0.5);
   font-size: 1.5em;
 }
 
@@ -34,7 +36,6 @@ nav a {
   padding: 20px;
   margin: 10px;
   color: #ffffff;
-  
 }
 
 a {
@@ -44,6 +45,7 @@ a {
 nav a:hover {
   color: #000000;
   background-color: #ffffff;
+  box-shadow:15px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -57,7 +59,7 @@ main {
   padding-bottom: 50px;
 }
 main h1 {
-  font-size: 2em;
+  font-size: 5em;
   padding-top: 150px;
   color:#000000;
 }
@@ -90,12 +92,54 @@ article h2 {
   margin-top: 40px;
 }
 
+article h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 20px;
+}
+
 article p {
   margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;
 }
 
+table {
+  width: 87%;
+  color: #000000;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #182522;
+  color: rgb(255, 255, 255);
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.voltar-inicio {
+  color: #ffffff;
+  background-color: #182522;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.voltar-inicio:hover {
+  color: #182522;
+  background-color: #ffffff;
+}
 
 .container {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
@@ -185,8 +229,8 @@ article p {
 }
 
 .img-text-cliente img {
-  width: 190px;
-  height: 190px;
+  width: 199px;
+  height: 199px;
   border-radius: 10px;
   border:5px solid #182522;;
 }
@@ -223,7 +267,7 @@ article p {
   color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
 }
 
 .formulario-container p {
