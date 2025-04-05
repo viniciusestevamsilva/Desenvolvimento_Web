@@ -84,11 +84,12 @@ article a {
   margin-right: 50px;
   margin-bottom: 20px;
 }
+
 article h2 {
   font-weight: bold;
   font-size: 1.5em;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 40px;
 }
 
@@ -174,7 +175,7 @@ tr:hover {
   width: 280px;
   height: 280px;
   border-radius: 10px;
-  border:5px solid rgb(255, 255, 255);
+
 }
 
 .img-text-right {
@@ -189,7 +190,6 @@ tr:hover {
   width: 280px;
   height: 280px;
   border-radius: 10px;
-  border:5px solid rgb(255, 255, 255);
 }
 
 .clear {
@@ -245,7 +245,6 @@ tr:hover {
   background-image: URL("../img/fundo-main.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
   min-height: 600px;
   padding: 20px;
@@ -257,6 +256,15 @@ tr:hover {
   background-position: center;
   width: 100%;
   min-height: 600px;
+  padding: 20px;
+}
+
+.fundo-header2 {
+  background-image: URL("../img/fundo-header2.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 310px;
   padding: 20px;
 }
 
