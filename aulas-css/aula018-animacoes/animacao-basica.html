@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animação Simples com CSS3</title>
 
     <style>
-        /* Estilos para o corpo de pagina */
-        body {
-            display: flex; /* Usa flexbox para centralizar */
-            justify-content: center; /* Centraliza horiozontalmente */
-            align-items: center; /* Centraliza verticalmente */
-            height: 100vh; /* Altura total de viewport */
-            background-color: #f0f0f0; /* Cor de fundo cinza claro */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .caixa {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        border-radius: 10px;
+
+        animation: moverEColorir 4s ease-in-out infinite alternate;
+      }
+
+      @keyframes moverEColorir {
+        0% {
+          transform: translateY(0);
+          background-color: #3498db;
         }
 
-        /* Estilos para a caixa que sera animada */
-        .caixa {
-            width: 100px;
-            height: 100px;
-            background-color: #3498db;
-            border-radius: 10px;
-
-            animation: moverEColorir 4s ease-in-out infinite alternate;
+        50% {
+          transform: translateY(-100px);
+          background-color: #e74c3c;
         }
 
-        @keyframes moverEColorir {
-            0% {
-                transform: translateY(0);
-                background-color: #3498db;
-            }
-
-            50% {
-                transform: translateY(-100px);
-                background-color: #e74c3c;
-            }
-
-            100% {
-                transform: translateY(0);
-                background-color: #2ecc71;
-            }
+        100% {
+          transform: translateY(0);
+          background-color: #2ecc71;
         }
+      }
     </style>
   </head>
+
   <body>
     <div class="caixa"></div>
   </body>
+
 </html>
