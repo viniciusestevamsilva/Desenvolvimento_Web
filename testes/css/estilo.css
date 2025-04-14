@@ -23,8 +23,9 @@ header {
 header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 2.5rem;
-    margin-bottom: 0.3rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
 }
 
 header p {
@@ -61,7 +62,49 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #9d50bb;
+    background-color: #6e6870;
+}
+
+section {
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 150px;
+}
+
+article {
+    padding: 20px;
+}
+.fundo-header {
+    background-image: URL("../img/beautiful-panoramic-shot-mountains-rocky-cliffs-natural-fog.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 600px;
+    padding: 20px;
+}
+
+.container {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    background-color: #6e6870;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.voltar-inicio {
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.voltar-inicio:hover {
+    color: #ffffff;
 }
 
 footer {
