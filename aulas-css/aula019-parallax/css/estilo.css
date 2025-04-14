@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Primeiro imagem de fundo */
+.parallax1 {
+    background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2134320/extras/Froggy.gif?t=1743103758')
+}
+.parallax2 {
+    background-image: url('https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2025/03/e3.jpg');
+}
+
+.content {
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
