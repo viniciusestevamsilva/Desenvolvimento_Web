@@ -1,0 +1,60 @@
+/* Aplica a todos os elementos da página */
+* {
+    box-sizing: border-box;       /* Inclui padding e border no cálculo do tamanho total do elemento */
+    font-family: "roboto";        /* Define a fonte padrão como Roboto */
+    font-weight: bold;            /* Deixa todos os textos em negrito */
+}
+
+/* Estilos do corpo da página */
+body {
+    display: flex;                /* Torna o body um container flexível */
+    min-height: 100vh;            /* Garante que o body tenha no mínimo a altura total da tela */
+    flex-direction: column;       /* Organiza os filhos (header, main, footer) em coluna */
+    margin: 0;                    /* Remove a margem padrão do navegador */
+}
+
+/* Container principal da página */
+main {
+    display: flex;                /* Torna o main um container flexível (linha por padrão) */
+    flex: 1;                      /* Faz o main ocupar o espaço restante verticalmente */
+}
+
+/* Área de conteúdo principal (article) */
+main > article {
+    flex: 1;                      /* Ocupa o maior espaço possível dentro do main */
+    order: 1;                     /* Define a ordem de exibição (aparece primeiro) */
+}
+
+/* Barra lateral (aside) e navegação (nav) */
+main > nav,
+main > aside {
+    flex: 0 0 20vw;               /* Largura fixa de 20% da largura da tela; não cresce ou encolhe */
+}
+
+/* Navegação (nav) */
+main > nav {
+    background: #baddb4;          /* Cor de fundo verde claro */
+    order: 3;                     /* Aparece por último no layout */
+}
+
+/* Barra lateral (aside) */
+main > aside {
+    background: rgb(231, 218, 158); /* Cor de fundo amarelo claro */
+    order: 2;                       /* Aparece entre o article e o nav */
+}
+
+/* Cabeçalho e rodapé da página */
+header,
+footer {
+    background: rgba(242, 116, 6); /* Cor de fundo laranja */
+    height: 20vh;                  /* Altura de 20% da altura da tela */
+}
+
+/* Espaçamento interno dos principais elementos */
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;                  /* Espaço interno de 1em para dar respiro ao conteúdo */
+}
