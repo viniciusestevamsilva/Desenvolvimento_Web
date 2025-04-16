@@ -1,0 +1,163 @@
+/* modulo 1: configurações basicas o reset*/
+
+/* Reset basico para remover margen e paddings padrao */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* configuração do corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Garente que o ody ocupe toda a altura da tela */
+    display: flex;/* ativa flexbox non body*/
+    flex-direction: column;/* organiza os filhos em coluna (header, main, footer) */
+}
+
+/* header basico para todos as seções (apenas para visualização durante o desenvolvimento */
+header, nav, main, section, aside, footer {
+    padding: 28px;
+    border: 1px dashed #ccc; /* borda tracejada para viasualizaçao*/
+}
+
+/* modulo 2: estilização do banner */
+.banner {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 48px 28px;
+    text-align: center;
+
+    /* Flexbox para alinhar conteudo verticalmente 9se houver multiplos alementos )*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center /* alinha verticalmente */;
+    align-items: center; /* alinha horizontalmente */
+
+    min-height: 150px;
+}
+
+/* modulo 3: estilização de navegaçao */
+
+.navegacao {
+    background-color: #333;
+
+    /* flexblox para linhar as items da navegação horizontalmente*/
+    display: flex;
+    justify-content: center; /* centraliza os items horizontalmente*/
+    flex-wrap: wrap; /* permite que os items querem para linha seguinte em telas pequenas*/
+}
+
+/* estilo das linhas de navegação*/
+.navegacao a { 
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.navegacao a:hover{
+    background-color: #555;
+}
+
+/* modulo 4: estilizacao do conteudo principal */
+.conteudo-principal {
+    /* Felxbox para organizar a area de conteudo e a barra lateral */
+    display: flex;
+    flex: 1; /* faz com que o main ocupe todo o espçao disponivel entre header e footer */
+
+    /* layout padra: barra lateral a direita */
+    flex-direction: row;
+
+    /* para telas pequenas, vamos andar para coluna (abaixo no modulo responsivo) */
+}
+
+.area-conteudo {
+    background-color: #f4f4f4;
+    flex: 3; /* ocuoa 3 partes do espaço disponel */
+    min-height: 400px;
+}
+
+.barra-lateral {
+    background-color: #e4e4e4;
+    flex: 1;
+}
+
+/* modulo 5: estilizaçao do rodape */
+
+.rodape { 
+    background-color: #333;
+    color: white ;
+    text-align: center;
+    padding: 20px;
+
+    /*flexbox para organizar multiplos elementos no rodape*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* modulo 6: adaptações para responsividade */
+
+@media (max-width: 768px ) {
+    /* quando a tela for menor ue 768px */
+
+    .conteudo-principal {
+        flex-direction: column; /* muda a direção para empilhar conteudo */
+    }
+
+    .area-conteudo, .barra-lateral {
+        /*flex: 1; ambas ocupam a mesma proporção */
+        width: 100%;
+    }
+
+    .navegacao {
+        flex-direction: column; /*empilha os links de navegacao */
+    }
+
+    .navegacao a {
+        border-bottom: 1px solid #555; /* adiciona divisao entre links */
+    }
+}
+
+/* modulo 7: melhorias visuai detalhes */
+
+/* espçamento consistente */
+body > * {
+    padding: 20px;
+}
+
+/* sombra no banner para profundidade */
+.banner {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* borda entre conteudo e barra lateral */
+.barra-lateral {
+    border-left: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .barra-lateral {
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+}
+
+/* espaçamento interno para os conteudos */
+.area-conteudo, .barra-lateral {
+    padding: 20px;
+}
+
+/* estilo para titulos */
+h1,h2,h3 {
+    margin-bottom: 15px;
+}
+
+/* estilos para paragrafos */
+p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
