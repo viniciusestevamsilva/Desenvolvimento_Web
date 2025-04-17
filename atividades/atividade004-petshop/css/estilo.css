@@ -3,89 +3,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-
-/* Estilos gerais do corpo do docuento */
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    min-height: 100vh; /* Garente que o ody ocupe toda a altura da tela */
-    display: flex;/* ativa flexbox non body*/
-    flex-direction: column;/* organiza os filhos em coluna (header, main, footer) */
-}
-
-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
     background: #333;
     color: white;
     text-align: center;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-weight: bold;
     font-size: 2rem;
     margin: 3rem;
-}
-
-header p {
+  }
+  
+  header p {
     font-weight: 300;
     font-size: 1.2rem;
-}
-
-section {
-    display: flex;/* ativa flexbox non body*/
+  }
+  
+  section {
+    display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-}
-
-section h1{
+  }
+  
+  section h1 {
     color: #333;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
-}
-
-
-.navegacao {
+  }
+  
+  .navegacao {
     background-color: #333;
-    /* flexblox para linhar as items da navegação horizontalmente*/
     display: flex;
-    justify-content: center; /* centraliza os items horizontalmente*/
-    flex-wrap: wrap; /* permite que os items querem para linha seguinte em telas pequenas*/
-}
-
-/* estilo das linhas de navegação*/
-.navegacao a { 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .navegacao a {
     color: #ffffff;
     text-decoration: none;
     padding: 15px 20px;
     text-align: center;
     transition: background-color 0.3s;
-}
-
-.navegacao a:hover{
+  }
+  
+  .navegacao a:hover {
     color: #ffffff;
     background-color: #ff9100e8;
-}
-
-.parallax {
-    height: 100vh;
+  }
+  
+  /* Parallax */
+  .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* Primeiro imagem de fundo */
-.parallax1 {
+    padding: 60px 20px;
+  }
+  
+  .parallax1 {
     background-image: url("../img/front-view-beautiful-dog-with-copy-space.png");
-    min-height: 500px;
-}
-.parallax2 {
+    min-height: auto;
+  }
+  
+  .parallax2 {
     background-image: url("../img/front-view-beautiful-dog-with-copy-space (1).jpg");
-}
-
-.content {
-    height: 100vh;
+    min-height: auto;
+ }
+  
+  .content {
+    min-height: 100vh;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
@@ -93,74 +90,137 @@ section h1{
     align-items: center;
     text-align: center;
     padding: 40px;
-}
-.conteudo-principal {
-    /* Felxbox para organizar a area de conteudo e a barra lateral */
+  }
+  
+  .conteudo-principal {
     display: flex;
-    flex: 1; /* faz com que o main ocupe todo o espçao disponivel entre header e footer */
-
-    /* layout padra: barra lateral a direita */
+    flex: 1;
     flex-direction: row;
-
-    /* para telas pequenas, vamos andar para coluna (abaixo no modulo responsivo) */
-}
-
-.area-conteudo {
+  }
+  
+  .area-conteudo {
     background-color: #f4f4f4;
-    flex: 3; /* ocuoa 3 partes do espaço disponel */
+    flex: 3;
     min-height: 400px;
-}
-
-.barra-lateral {
-    border-left: 1px solid #ccc;
-}
-
-@media (max-width: 768px ) {
-    /* quando a tela for menor ue 768px */
-
-    .navegacao {
-        flex-direction: column; /*empilha os links de navegacao */
-    }
-
-    .navegacao a {
-        border-bottom: 1px solid #555; /* adiciona divisao entre links */
-    }
-
-    .barra-lateral {
-        border-left: none;
-        border-top: 1px solid #ccc;
-    }
-    .area-conteudo .barra-lateral {
-        /*flex: 1; ambas ocupam a mesma proporção */
-        width: 100%;
-    }
-
-}
-
-.barra-lateral {
     padding: 20px;
-}
-
-.rodape { 
+  }
+  
+  /* Corrigido: .container mais flexível */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #f4f4f4;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  /* Produtos */
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .produtos {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #ffffffcc;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .produtos img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .produtos:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Barra lateral */
+  .barra-lateral {
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  /* Rodapé */
+  .rodape {
     background-color: #333;
-    color: white ;
+    color: white;
     text-align: center;
     padding: 20px;
-
-    /*flexbox para organizar multiplos elementos no rodape*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 2rem;
-}
-
-footer p {
+  }
+  
+  footer p {
     margin-bottom: 0.5rem;
-}
+  }
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.5rem;
+      margin: 2rem;
+    }
+  
+    .navegacao {
+      flex-direction: column;
+    }
+  
+    .navegacao a {
+      border-bottom: 1px solid #555;
+    }
+  
+    .conteudo-principal {
+      flex-direction: column;
+    }
+  
+    .area-conteudo,
+    .barra-lateral {
+      width: 100%;
+    }
+  
+    .produtos-container {
+        justify-content: center;
+      }
+    
+      .produtos {
+        width: 90%;
+        max-width: 300px;
+      }
+  
+    .container {
+      width: 95%;
+      padding: 10px;
+      margin: 20px auto;
+    }
+  
+    .rodape {
+      font-size: 0.9rem;
+    }
+  }
+  
