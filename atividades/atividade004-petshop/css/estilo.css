@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, #3d7e32, #47e64f);
+    background: #333;
     color: white;
     text-align: center;
 }
@@ -31,22 +31,22 @@ header p {
     font-size: 1.2rem;
 }
 
-article {
-    text-align: center;
+section {
+    display: flex;/* ativa flexbox non body*/
+    flex-direction: column;
+    font-size: 1.2rem;
 }
 
-article > h1 {
-    margin: 50px;
-    font-weight: bold;
-    font-size: 2rem;
+section h1{
+    color: #333;
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
-
-
 
 
 .navegacao {
-    background-color: #e5e5ee;
+    background-color: #333;
     /* flexblox para linhar as items da navegação horizontalmente*/
     display: flex;
     justify-content: center; /* centraliza os items horizontalmente*/
@@ -55,7 +55,7 @@ article > h1 {
 
 /* estilo das linhas de navegação*/
 .navegacao a { 
-    color: #555;
+    color: #ffffff;
     text-decoration: none;
     padding: 15px 20px;
     text-align: center;
@@ -64,35 +64,55 @@ article > h1 {
 
 .navegacao a:hover{
     color: #ffffff;
-    background-color: #3d7e32;
+    background-color: #ff9100e8;
 }
 
-.fundo{
-    background-size: cover;
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
     background-position: center;
-    width: 100%;
-    min-height: 200px;
-    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#logo {
+/* Primeiro imagem de fundo */
+.parallax1 {
+    background-image: url("../img/front-view-beautiful-dog-with-copy-space.png");
+    min-height: 500px;
+}
+.parallax2 {
+    background-image: url("../img/front-view-beautiful-dog-with-copy-space (1).jpg");
+}
+
+.content {
+    height: 100vh;
+    background-color: #f4f4f4;
     display: flex;
-    justify-content: center; /* centraliza os items horizontalmente*/
-    flex-wrap: wrap; /* permite que os items querem para linha seguinte em telas pequenas*/
-}
-
-.container {
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 40px;
+}
+.conteudo-principal {
+    /* Felxbox para organizar a area de conteudo e a barra lateral */
+    display: flex;
+    flex: 1; /* faz com que o main ocupe todo o espçao disponivel entre header e footer */
+
+    /* layout padra: barra lateral a direita */
+    flex-direction: row;
+
+    /* para telas pequenas, vamos andar para coluna (abaixo no modulo responsivo) */
 }
 
-.inline-block {
-    display: inline-block;
-    width: 250px;
-    vertical-align: top;
-    background-color: #e5e5ee;
-    padding: 10px;
-    margin: 10px;
+.area-conteudo {
+    background-color: #f4f4f4;
+    flex: 3; /* ocuoa 3 partes do espaço disponel */
+    min-height: 400px;
+}
+
+.barra-lateral {
+    border-left: 1px solid #ccc;
 }
 
 @media (max-width: 768px ) {
@@ -105,4 +125,42 @@ article > h1 {
     .navegacao a {
         border-bottom: 1px solid #555; /* adiciona divisao entre links */
     }
+
+    .barra-lateral {
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+    .area-conteudo .barra-lateral {
+        /*flex: 1; ambas ocupam a mesma proporção */
+        width: 100%;
+    }
+
+}
+
+.barra-lateral {
+    padding: 20px;
+}
+
+.rodape { 
+    background-color: #333;
+    color: white ;
+    text-align: center;
+    padding: 20px;
+
+    /*flexbox para organizar multiplos elementos no rodape*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
 }
