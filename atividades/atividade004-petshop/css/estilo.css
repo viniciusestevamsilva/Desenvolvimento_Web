@@ -1,5 +1,5 @@
 * {
-    font-family: "Playfair Display", serif;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -156,17 +156,25 @@
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    text-align: center;
+    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s;
   }
 
+  .produtos p , h2 {
+    font-size: 0.9em;
+    text-align: left;
+    margin: 20px;
+
+  }
+
   .produtos a {
-    display: flex;
-    width: 50%;
+    font-size: 0.7em;
+    display: inline;
+    color: #ffffff;
+    background-color: #ff9100e8;
     text-decoration: none;
-    padding: 10px;
-    margin-left: 2;
+    padding: 5px;
     border-radius: 5px;
   }
   
