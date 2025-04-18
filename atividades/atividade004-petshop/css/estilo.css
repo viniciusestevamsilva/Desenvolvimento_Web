@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.2rem;
   }
   
   body {
@@ -36,10 +37,12 @@
   }
   
   section h1 {
-    color: #333;
+    color: #ffffff;
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    text-align: center;
   }
   
   .navegacao {
@@ -58,8 +61,8 @@
   }
   
   .navegacao a:hover {
-    color: #ffffff;
-    background-color: #ff9100e8;
+    color: #ff9100e8;
+    background-color: #333;
   }
   
   /* Parallax */
@@ -81,28 +84,50 @@
     min-height: auto;
  }
   
+ .fundo {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+ }
   .content {
-    min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
   }
-  
+
   .conteudo-principal {
     display: flex;
     flex: 1;
     flex-direction: row;
   }
-  
+
+  .conteudo-principal h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #333;
+
+  }
+
+
   .area-conteudo {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
     flex: 3;
     min-height: 400px;
     padding: 20px;
+  }
+  .area-conteudo h2 {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
   
   /* Corrigido: .container mais flexível */
@@ -120,24 +145,29 @@
   }
   
   /* Produtos */
-  .produtos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-  }
   
   .produtos {
-    flex: 1 1 250px;
+    flex: 1;
+    flex-direction: column;
     max-width: 300px;
-    background-color: #ffffffcc;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s;
+  }
+
+  .produtos a {
+    display: flex;
+    width: 50%;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 2;
+    border-radius: 5px;
   }
   
   .produtos img {
@@ -152,9 +182,38 @@
   
   /* Barra lateral */
   .barra-lateral {
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #ff9100e8;
     padding: 20px;
     flex: 1;
+    text-align: left;
+  }
+
+  .barra-lateral p, h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .barra-lateral a {
+    display: flex;
+    width: 48%;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff9100e8;
+    padding: 10px;
+    margin-left: 70px;
+    border-radius: 5px;
+  }
+
+  .barra-lateral a:hover {
+    color: #ff9100e8;
+    background-color: #000000e8;
+  }
+
+  .barra-lateral img {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
   }
   
   /* Rodapé */
