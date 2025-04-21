@@ -29,6 +29,12 @@
     font-weight: 300;
     font-size: 1.2rem;
   }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
   
   section {
     display: flex;
@@ -38,7 +44,6 @@
   
   section h1 {
     color: #ffffff;
-    text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 4rem;
@@ -97,7 +102,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 20px;
   }
 
@@ -111,7 +116,7 @@
     font-size: 2.5rem;
     margin: 2rem 0;
     color: #333;
-
+    text-align: left;
   }
 
 
@@ -175,7 +180,13 @@
     background-color: #ff9100e8;
     text-decoration: none;
     padding: 5px;
+    margin-left: 60px;
     border-radius: 5px;
+  }
+
+  .produtos a:hover {
+    color: #ff9100e8;
+    background-color: #000000e8;
   }
   
   .produtos img {
@@ -205,10 +216,11 @@
     display: flex;
     width: 48%;
     text-decoration: none;
+    justify-content: center;
     color: #ffffff;
     background-color: #ff9100e8;
-    padding: 10px;
-    margin-left: 70px;
+    padding: 8px;
+    margin-left: 170px;
     border-radius: 5px;
   }
 
