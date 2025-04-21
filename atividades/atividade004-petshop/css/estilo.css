@@ -300,6 +300,58 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+#formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#formulario-contato label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+#formulario-contato input,
+#formulario-contato select,
+#formulario-contato textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+#formulario-contato textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#formulario-contato button {
+  align-self: flex-start;
+  background-color: #ff9100e8;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#formulario-contato button:hover {
+  background-color: #000000e8;
+  color: #ff9100e8;
+}
 
 footer {
   background-color: #333;
