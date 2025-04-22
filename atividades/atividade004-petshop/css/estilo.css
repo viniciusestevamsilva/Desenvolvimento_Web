@@ -20,7 +20,8 @@ header {
 
 header h1 {
   font-weight: bold;
-  font-size: 2rem;
+  text-align: right;
+  font-size: 6rem;
   margin: 3rem;
 }
 
@@ -53,6 +54,20 @@ del {
   opacity: 0.7;
   font-size: 0.7rem;
 }
+
+table {
+  text-decoration: none;
+}
+
+#fundo-header {
+  background-image: URL("../img/front-view-beautiful-dog-with-copy-space.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 600px;
+  padding: 20px;
+}
+
 
 .navegacao {
   background-color: #333;
@@ -217,22 +232,26 @@ h2 {
 .produtos a {
   font-size: 0.7em;
   display: inline;
-  color: #ffffff;
+  color: #ffffffe8;
   background-color: #ff9100e8;
   text-decoration: none;
   padding: 5px;
-  margin-left: 50px;
   border-radius: 5px;
 }
 
 .produtos a:hover {
   color: #ff9100e8;
-  background-color: #000000e8;
+  background-color: #333;
 }
 
 .produtos img {
   width: 100%;
   height: auto;
+  border-radius: 5px;
+}
+
+.produtos a img:hover {
+  border: #ffffffe8 solid 5px;
   border-radius: 5px;
 }
 
@@ -273,6 +292,13 @@ h3 {
 .barra-lateral img {
   height: 300px;
   width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.barra-lateral a img {
+  height: 300px;
+  width: auto;
   border-radius: 5px;
   margin-top: 20px;
 }
