@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 body {
@@ -48,6 +48,11 @@ section h1 {
   margin-bottom: 2rem;
   font-size: 4rem;
   text-align: center;
+}
+
+article {
+  margin: 50px;
+  padding: 30px;
 }
 
 del {
@@ -407,6 +412,12 @@ footer p {
 
   .conteudo-principal {
     flex-direction: column;
+  }
+
+  .parallax, .parallax2 h1 {
+    font-size: 1.2rem;
+    width: auto;
+    height: auto;
   }
 
   .area-conteudo,
