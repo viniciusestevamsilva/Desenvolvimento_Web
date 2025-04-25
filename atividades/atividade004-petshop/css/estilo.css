@@ -65,7 +65,7 @@ del {
   font-size: 0.7rem;
 }
 
-table {
+table td{
   text-decoration: none;
 }
 
@@ -168,6 +168,7 @@ table {
   border-radius: 8px;
   overflow: hidden;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .tabela-promocoes thead {
@@ -177,9 +178,14 @@ table {
 
 .tabela-promocoes th,
 .tabela-promocoes td {
+  text-decoration: none;
   padding: 15px;
   text-align: center;
+}
 
+.tabela-promocoes a {
+  text-decoration: none;
+  color: #ff9100;
 }
 
 .tabela-promocoes tbody tr:hover {
@@ -196,18 +202,6 @@ table {
   font-size: 1.1rem;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  width: 90%;
-  max-width: 800px;
-  background-color: #f4f4f4;
-  margin: 50px auto;
-  padding: 20px;
-}
 
 .produtos {
   flex: 1;
@@ -319,7 +313,6 @@ h3 {
   color: #555;
 }
 
-/* Rodapé */
 .rodape {
   background-color: #333;
   color: white;
@@ -395,7 +388,6 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
 
 

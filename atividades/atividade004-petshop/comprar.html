@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprar Produto</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+    <header id="fundo-header">
+      <h1><img src="img\dog-paw1.png" alt="" /> Compras</h1>
+    </header>
+
+    <nav class="navegacao">
+      <a href="index.html">Voltar</a>
+    </nav>
+
+    <main id="fonte">
+
+
+        <section class="content conteudo-principal">
+    
+            <aside class="barra-lateral">
+                <h2><strong>FIQUE ATENTO  !</strong></h2>
+                <table class="tabela-promocoes">
+                  <thead>
+                    <tr>
+                      <th>Cupons</th>
+                      <th>Válido até</th>
+                      <th>Desconto</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Banho2025</td>
+                      <td>26/06/2025</td>
+                      <td><strong>23%</strong></td>
+                    </tr>
+                    <tr>
+                      <td>saidinha</td>
+                      <td>12/05/2025</td>
+                      <td><strong>30%</strong></td>
+                    </tr>
+                    <tr>
+                      <td>petisco</td>
+                      <td>20/05/2025</td>
+                      <td><strong>10%</strong></td>
+                    </tr>
+                    <tr>
+                      <td>PetP</td>
+                      <td>21/05/2025</td>
+                      <td><strong>50%</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+      
+                <table class="tabela-promocoes">
+                  <thead>
+                    <tr>
+                      <th>Combos</th>
+                      <th>Válido até</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Banho + brinquedo<br><strong>20%</strong> de desconto</td>
+                      <td>26/06/2025</td>
+                    </tr>
+                    <tr>
+                      <td>tosa+ comida<br><strong>30%</strong> de desconto</td>
+                      <td>12/05/2025</td>
+                    </tr>
+                    <tr>
+                      <td>Banho + higiene<br><strong>60%</strong> de desconto</td>
+                      <td>20/05/2025</td>
+                    </tr>
+                    <tr>
+                      <td>tosa + acessorio<br><strong>20%</strong> de desconto</td>
+                      <td>21/05/2025</td>
+                    </tr>
+                  </tbody>
+                </table>
+      
+              </aside>
+ 
+              <div class="area-conteudo">
+
+                <form action="enviar.php" method="post" id="formulario-contato">
+
+                    <h1>Comprar Produto</h1>
+                    <label for="nome">Nome do Produto:</label>
+                    <input type="text" id="nome" name="nome" required />
+          
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required />
+          
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" />
+          
+                    <label for="servico">Classificação:</label>
+                    <select id="servico" name="servico" required>
+                      <option value="">-- Selecione --</option>
+                      <option value="comidinha">Comidinha</option>
+                      <option value="brinquedinho">Brinquedinho</option>
+                      <option value="acessorio">Acessorio</option>
+                      <option value="higiene">Higiene</option>
+                    </select>
+          
+                    <label for="servico">Cupon Desconto:</label>
+                    <select id="servico" name="servico" required>
+                      <option value="">-- Selecione --</option>
+                      <option value="cupon">nenhum</option>
+                      <option value="cupon">Banho2025</option>
+                      <option value="cupon">saidinha</option>
+                      <option value="cupon">petisco</option>
+                      <option value="cupon">PetP</option>
+                    </select>
+          
+                    <label for="Endereço">Endereço:</label>
+                    <input type="text" id="telefone" name="telefone" />
+          
+                    <button type="submit">Comprar</button>
+                  </form>
+              </div>
+          
+        
+            <aside class="barra-lateral">
+               </aside>
+
+            
+
+        </section>
+  
+    </main>
+
+    <footer class="rodape">
+      <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
