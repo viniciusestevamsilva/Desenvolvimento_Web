@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeio contato</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="js\script.js" />
+</head>
+<body>
+
+    <!-- Exemplo ruim (obstrutivo) -->
+     <button onclick="alert('Ok')">Clique</button>
+
+     <!-- Exemplo correto <não obstrutivo)-->
+     <button id="meuBtao">Clique</button>
+     <script>
+        document.getElementById('meuBotao').addEventListener('click', () => {
+            alert('Ok'); //comportamento separado do html
+        });
+     </script>
+</body>
+</html>
