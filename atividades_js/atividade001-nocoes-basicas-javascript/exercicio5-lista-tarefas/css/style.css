@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    background-color: #ff0000d4;
+    padding: 15px 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 20px;
+    background-color: #ff0000d4;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c20000;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: #ff0000d4 solid 2px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#lista-tarefas li {
+    background-color: #f7f7f7;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista-tarefas li button {
+    background-color: transparent;
+    color: #ff0000d4;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#lista-tarefas li button:hover {
+    color: #c20000;
+}

@@ -1,0 +1,41 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+    const adicionar = document.getElementById('btnAdicionar');
+    const diminuir = document.getElementById('btnDiminuir');
+    const zerar = document.getElementById('btnZerar');
+    const display = document.getElementById('contador')
+    
+    let tempo = 0;
+
+    adicionar.addEventListener('click', function () {
+
+        display.textContent = tempo;
+
+        tempo++
+
+        if (tempo == 0){
+        display.textContent = "adicione tempo";
+       }
+    });
+
+    diminuir.addEventListener('click', function () {
+    
+        display.textContent = tempo-2;
+
+       tempo--
+
+       if (tempo === 0){
+        display.textContent = "adicione tempo";
+       }
+    });
+
+    zerar.addEventListener('click', function () {
+
+      
+
+       if (tempo >= 0){
+        display.textContent = "0";
+       }
+    });
+
+});

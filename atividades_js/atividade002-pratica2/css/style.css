@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+h1 {
+    color: #000000;
+    font-size: 28px;
+}
+
+main {
+    background-color: #d6d6d6;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#quadrado {
+    margin: 30px auto 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 120px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
