@@ -1,26 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Menu Lateral</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="sidebar closed" id="sidebar">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividades A até H</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="corpo">
+
+    <header>
+
+
+    </header>
+    
+    <div class="sidebar closed" id="sidebar">
     <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
     <ul>
-      <li><a href="#"><span class="icon">🏠</span><span class="text">Início</span></a></li>
-      <li><a href="#"><span class="icon">📁</span><span class="text">Projetos</span></a></li>
-      <li><a href="#"><span class="icon">❓</span><span class="text">Dúvidas</span></a></li>
-      <li><a href="#"><span class="icon">⚙️</span><span class="text">Configurações</span></a></li>
+      <li><button id="btnToggleTheme">🌗 Alternar tema</button></li>
     </ul>
   </div>
+ </div>
 
-  <div class="main-content">
-    <h1>Conteúdo Principal</h1>
-    <p>Aqui vai o conteúdo do seu site.</p>
-  </div>
+    <main>
+      <!-- A - Par ou Ímpar -->
+      <section class="container">
+        <h2>A - Verificação de Par ou Ímpar</h2>
+        <label for="numeroParImpar">Digite um número inteiro:</label>
+        <input type="number" id="numeroParImpar" />
+        <button type="button" id="verificarBtn">Verificar</button>
+        <p class="resultado" id="resultadoParImpar"></p>
+      </section>
 
-  <script src="js/script.js"></script>
-</body>
+      <!-- B - Maior/Menor ou Iguais -->
+      <section class="container">
+        <h2>B - Analisar Três Números</h2>
+        <input type="number" id="num1" placeholder="Número 1" />
+        <input type="number" id="num2" placeholder="Número 2" />
+        <input type="number" id="num3" placeholder="Número 3" />
+        <button type="button" id="btnAnalisar">Analisar</button>
+        <p class="resultado" id="resultadoNumeros"></p>
+      </section>
+
+      <section class="container">
+        <h2>C - Monitoramento de Velocidade</h2>
+        <label for="velocidade">Velocidade (km/h):</label>
+        <input
+          type="number"
+          id="velocidade"
+          placeholder="Digite a velocidade"
+        />
+        <button type="button" id="btnVerificarVelocidade">Analisar</button>
+        <p class="resultado" id="resultadoVelocidade"></p>
+      </section>
+
+      <section class="container">
+        <h2>D - Cálculo de Salário com Aumento</h2>
+        <label for="salario">Salário atual (R$):</label>
+        <input type="number" id="salario" placeholder="Informe o salário" />
+        <button type="button" id="btnCalcularSalario">Calcular</button>
+        <p class="resultado" id="resultadoSalario"></p>
+      </section>
+
+      <section class="container">
+        <h2>E - Cálculo do Preço da Passagem</h2>
+        <label for="distancia">Distância da viagem (km):</label>
+        <input type="number" id="distancia" placeholder="Informe a distância" />
+        <button type="button" id="btnCalcular">Calcular</button>
+        <p class="resultado" id="resultadoPreco"></p>
+      </section>
+
+      <section class="container">
+        <h2>F - Verificação de Ano Bissexto</h2>
+        <label for="ano">Digite um ano:</label>
+        <input type="number" id="ano" />
+        <button type="button" id="btnVerificarAno">Verificar</button>
+        <p class="resultado" id="resultadoAno"></p>
+      </section>
+
+      <section class="container">
+        <h2>G - Verificação de Triângulo</h2>
+        <input type="number" id="lado1" placeholder="Lado A" />
+        <input type="number" id="lado2" placeholder="Lado B" />
+        <input type="number" id="lado3" placeholder="Lado C" />
+        <button type="button" id="btnVerificarTriangulo">Verificar</button>
+        <p class="resultado" id="resultadoTriangulo"></p>
+      </section>
+
+      <section class="container">
+        <h2>H - Cálculo com a Fórmula de Bhaskara</h2>
+        <input type="number" id="inputA" placeholder="a" />
+        <input type="number" id="inputB" placeholder="b" />
+        <input type="number" id="inputC" placeholder="c" />
+      <button type="button" id="btnCalcularBhaskara">Calcular</button>
+        <div class="resultado" id="resultadoBhaskara"></div>
+      </section>
+    </main>
+
+    <!-- Importa o JavaScript modularizado -->
+    <script src="js/barra.js"></script>
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>

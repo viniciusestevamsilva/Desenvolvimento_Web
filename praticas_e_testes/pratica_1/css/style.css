@@ -1,14 +1,105 @@
+/* Reset básico */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  font-family: 'Segoe UI', sans-serif;
+/* ========================
+   VARIÁVEIS DE TEMA
+======================== */
+/* Tema claro (padrão) */
+body.light {
+  --bg: #dedede;
+  --text: #272525;
+  --container-bg: #ffffff;
+  --button-bg: #493ee6;
+  --button-color: #dedede;
 }
 
+/* Tema escuro */
+body.dark {
+  --bg: #1c1c1c;
+  --text: #f0f0f0;
+  --container-bg: #333333;
+  --button-bg: #3a3a9c;
+  --button-color: #f0f0f0;
+}
+
+/* ========================
+   ESTRUTURA GERAL
+======================== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  padding: 30px;
+  margin-top: 300px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1, h2 {
+  color: var(--text);
+}
+
+/* ========================
+   CONTAINERS E BOTÕES
+======================== */
+.container {
+  width: 300px;
+  background-color: var(--container-bg);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(116, 116, 116, 0.966);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+input[type="number"] {
+  padding: 8px;
+  width: 100%;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  font-weight: bold;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-color);
+  color: var(--button-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+  color: var(--text);
+}
+
+.resultado {
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+/* ========================
+   SIDEBAR
+======================== */
 .sidebar {
   background-color: #2c3e50;
   color: white;
@@ -42,11 +133,17 @@ body {
   align-items: center;
 }
 
-.sidebar li a {
+.sidebar li a,
+.sidebar li button {
   color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
 }
 
 .sidebar .icon {
@@ -56,9 +153,4 @@ body {
 
 .sidebar.closed .text {
   display: none;
-}
-
-.main-content {
-  flex: 1;
-  padding: 40px;
 }
