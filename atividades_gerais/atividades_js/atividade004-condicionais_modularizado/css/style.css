@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: #493ee6;
+  background-color: #3e87e6;
   padding: 30px;
   text-align: center;
   margin-bottom: 30px;
@@ -33,7 +33,7 @@ input[type="number"] {
 
 button {
   font-weight: bold;
-  background-color: #493ee6;
+  background-color: #3e87e6;
   color: #dedede;
   padding: 10px 16px;
   border: none;
@@ -43,7 +43,7 @@ button {
 
 button:hover {
   background-color: #dedede;
-  color: #493ee6;
+  color: #3e87e6;
   box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
