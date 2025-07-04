@@ -1,22 +1,22 @@
 
-import { imparpar } from './modulos/impar-par.js';
-import { menormaior } from './modulos/menor-maior-igual.js';
-import { velocidade } from './modulos/velocidade.js';
-import { aumento } from './modulos/aumento.js';
-import { bissexto } from './modulos/ano-bixesto.js';
-import { passagem } from './modulos/passagem.js';
-import { triangulo } from './modulos/triangulo.js';
-import { equacao } from './modulos/equacao.js';
+import { calcularParImpar } from './modulos/calcular-par-ou-impar.js';
+import { calcularMaiorMenor } from './modulos/comparar-tres-numeros.js';
+import { verificarVelocidade } from './modulos/verificar-velocidade.js';
+import { calcularAumento } from './modulos/calcular-aumento-salarial.js';
+import { calcularAnoBissexto } from './modulos/verificar-ano-bissexto.js';
+import { calcularPrecoPassagem } from './modulos/calcular-preco-passagem.js';
+import { verificarTriangulo } from './modulos/verificar-formacao-triangulo.js';
+import { calcularEquacao } from './modulos/resolver-equacao-bhaskara.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  imparpar();
-  menormaior();
-  velocidade();
-  aumento();
-  bissexto();
-  passagem();
-  triangulo();
-  equacao();
+  calcularParImpar();
+  calcularMaiorMenor();
+  verificarVelocidade();
+  calcularAumento();
+  calcularAnoBissexto();
+  calcularPrecoPassagem();
+  verificarTriangulo();
+  calcularEquacao();
 
 });
