@@ -13,6 +13,6 @@ export function calcularAnoBissexto() {
 
     mostrarResultado('resultadoAno', isBissexto
       ? `<span class="sucesso">${ano} é um ano bissexto!</span>`
-      : `<span class="alerta">${ano} NÃO é um ano bissexto.</span>`);
+      : `<span class="erro">${ano} NÃO é um ano bissexto.</span>`);
   });
 }

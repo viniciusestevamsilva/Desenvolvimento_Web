@@ -7,7 +7,7 @@ export function calcularMaiorMenor() {
     const n3 = obterNumero('num3');
 
     if (!validarNumeros(n1, n2, n3)) {
-      mostrarResultado('resultadoNumeros', 'Por favor, preencha todos os campos com números válidos.');
+      mostrarResultado('resultadoNumeros', '<span class="erro"> Por favor, preencha todos os campos com números válidos.</span>');
       return;
     }
 

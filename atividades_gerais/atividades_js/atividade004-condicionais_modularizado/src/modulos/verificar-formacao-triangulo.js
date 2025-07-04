@@ -15,6 +15,6 @@ export function verificarTriangulo() {
 
     mostrarResultado('resultadoTriangulo', podeFormar
       ? '<span class="sucesso">É possível formar um triângulo com esses lados.</span>'
-      : '<span class="alerta">Não é possível formar um triângulo com esses lados.</span>');
+      : '<span class="erro">Não é possível formar um triângulo com esses lados.</span>');
   });
 }

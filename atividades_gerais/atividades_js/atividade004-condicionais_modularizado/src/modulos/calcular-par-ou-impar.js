@@ -4,7 +4,7 @@ export function calcularParImpar() {
   AdicionarEvento('verificarBtn', () => {
     const numero = obterNumero('numeroParImpar');
     if (numero === null) {
-      mostrarResultado('resultadoParImpar', 'Por favor, digite um número válido.');
+      mostrarResultado('resultadoParImpar', '<span class="erro"> Por favor, digite um número válido.</span>');
       return;
     }
 

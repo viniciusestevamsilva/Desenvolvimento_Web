@@ -5,7 +5,7 @@ export function calcularAumento() {
     const salario = obterNumero('salario');
 
     if (salario === null || salario <= 0) {
-      mostrarResultado('resultadoSalario', '<span class="alerta">Erro: informe um salário válido e maior que zero.</span>');
+      mostrarResultado('resultadoSalario', '<span class="erro">Erro: informe um salário válido e maior que zero.</span>');
       return;
     }
 

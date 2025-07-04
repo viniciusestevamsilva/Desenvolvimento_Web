@@ -14,7 +14,7 @@ export function calcularEquacao() {
     const delta = b * b - 4 * a * c;
 
     if (delta < 0) {
-      mostrarResultado('resultadoBhaskara', '<span class="alerta">A equação não possui raízes reais.</span>');
+      mostrarResultado('resultadoBhaskara', '<span class="erro">A equação não possui raízes reais.</span>');
       return;
     }
 
