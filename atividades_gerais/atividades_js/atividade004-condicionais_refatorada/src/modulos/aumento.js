@@ -1,11 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-  
-  const inputSalario = document.getElementById('salario');
-  const botaoCalcular = document.getElementById('btnCalcularSalario');
-  const resultado = document.getElementById('resultadoSalario');
+import { AdicionarEvento } from '../utils/utils.js';
 
-  botaoCalcular.addEventListener('click', function () {
-    const salario = parseFloat(inputSalario.value);
+export function aumento() {
+  AdicionarEvento('btnCalcularSalario', () => {
+    const salario = parseFloat(document.getElementById('salario').value);
+    const resultado = document.getElementById('resultadoSalario');
 
     if (isNaN(salario) || salario <= 0) {
       resultado.innerHTML = '<span class="alerta">Erro: informe um salário válido e maior que zero.</span>';
@@ -23,6 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       resultado.innerHTML = `Salário permanece o mesmo: R$ ${salario.toFixed(2)}`;
     }
-
   });
-});
+}
