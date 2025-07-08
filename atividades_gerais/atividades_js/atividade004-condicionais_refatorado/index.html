@@ -7,77 +7,191 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-
     <header>
-      <h1>Atividade 4 - JS Condincionais Refatorada</h1>
+      <h1>Atividade 4 - JS Condicionais Refatorada</h1>
     </header>
-    
+
     <main>
-      <section class="container">
-        <h2>A - Verificação de Par ou Ímpar</h2>
-        <p>Digite um número inteiro:</p>
-        <input type="number" id="numeroParImpar" />
-        <button type="button" id="verificarBtn">Verificar</button>
-        <p class="resultado" id="resultadoParImpar"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade A - Descrição</h2>
+          <p>
+            A empresa WebData Solutions contratou você para desenvolver uma
+            página interativa que ajude seus usuários a classificar números.
+            Eles precisam de uma interface onde o usuário insira um número
+            inteiro, clique em um botão e receba na tela a informação se o
+            número é par ou ímpar. Esse recurso será integrado ao site da
+            empresa para pequenos cálculos rápidos.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>A - Verificação de Par ou Ímpar</h2>
+          <p>Digite um número inteiro:</p>
+          <input type="number" id="numeroParImpar" />
+          <button type="button" id="verificarBtn">Verificar</button>
+          <p class="resultado" id="resultadoParImpar"></p>
+        </article>
       </section>
 
-      <section class="container">
-        <h2>B - Analisar Três Números</h2>
-        <input type="number" id="num1" placeholder="Número 1" />
-        <input type="number" id="num2" placeholder="Número 2" />
-        <input type="number" id="num3" placeholder="Número 3" />
-        <button type="button" id="btnAnalisar">Analisar</button>
-        <p class="resultado" id="resultadoNumeros"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade B - Descrição</h2>
+          <p>
+            A startup CodeMetrics precisa de uma funcionalidade para seu portal
+            de análise de dados. Sua tarefa é criar uma página onde o usuário
+            digite três números, e ao clicar em um botão, o site informe qual é
+            o maior número, o menor ou se todos são iguais. A interface deve ser
+            clara, amigável e com feedback imediato.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>B - Analisar Três Números</h2>
+          <input type="number" id="num1" placeholder="Número 1" />
+          <input type="number" id="num2" placeholder="Número 2" />
+          <input type="number" id="num3" placeholder="Número 3" />
+          <button type="button" id="btnAnalisar">Analisar</button>
+          <p class="resultado" id="resultadoNumeros"></p>
+        </article>
       </section>
 
-      <section class="container">
-        <h2>C - Monitoramento de Velocidade</h2>
-        <p>Velocidade (km/h):</p>
-        <input type="number" id="velocidade" placeholder="Digite a velocidade"/>
-        <button type="button" id="btnVerificarVelocidade">Analisar</button>
-        <p class="resultado" id="resultadoVelocidade"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade C - Descrição</h2>
+          <p>
+            A empresa SpeedControl Web está desenvolvendo um simulador online
+            para conscientização sobre segurança no trânsito. Sua missão é criar
+            uma página onde o usuário insere a velocidade de um veículo e o
+            sistema informa se o motorista está dentro do limite (até 60 km/h)
+            ou se está acima do permitido, exibindo uma mensagem de alerta ou
+            segurança.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>C - Monitoramento de Velocidade</h2>
+          <p>Velocidade (km/h):</p>
+          <input
+            type="number"
+            id="velocidade"
+            placeholder="Digite a velocidade"
+          />
+          <button type="button" id="btnVerificarVelocidade">Analisar</button>
+          <p class="resultado" id="resultadoVelocidade"></p>
+        </article>
       </section>
 
-      <section class="container">
-        <h2>D - Cálculo de Salário com Aumento</h2>
-        <p>Salário atual (R$):</p>
-        <input type="number" id="salario" placeholder="Informe o salário" />
-        <button type="button" id="btnCalcularSalario">Calcular</button>
-        <p class="resultado" id="resultadoSalario"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade D - Descrição</h2>
+          <p>
+            O site corporativo da DevSalary Pro precisa de uma calculadora
+            salarial para seus funcionários. Você deve criar uma página onde o
+            usuário informa o salário atual, e o sistema calcula o novo salário
+            com base nas seguintes regras: Se o salário for menor que R$1000,00,
+            aplica-se um aumento de 10%. Se o salário for maior que R$1500,00,
+            aplica-se um aumento de 5%. Se o salário for entre R$1000,00 e
+            R$1500,00 (inclusive), o salário permanece o mesmo. O sistema também
+            deve verificar se o valor informado não é zero ou negativo e, nesse
+            caso, exibir uma mensagem de erro.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>D - Cálculo de Salário com Aumento</h2>
+          <p>Salário atual (R$):</p>
+          <input type="number" id="salario" placeholder="Informe o salário" />
+          <button type="button" id="btnCalcularSalario">Calcular</button>
+          <p class="resultado" id="resultadoSalario"></p>
+        </article>
       </section>
 
-      <section class="container">
-        <h2>E - Cálculo do Preço da Passagem</h2>
-        <p>Distância da viagem (km):</p>
-        <input type="number" id="distancia" placeholder="Informe a distância" />
-        <button type="button" id="btnCalcular">Calcular</button>
-        <p class="resultado" id="resultadoPreco"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade E - Descrição</h2>
+          <p>
+            A agência online ViaWeb Viagens deseja uma calculadora de preços
+            para passagens de ônibus no site. Crie uma página onde o usuário
+            informa a distância da viagem em quilômetros, e o site calcula o
+            preço total, conforme a regra: Viagens de até 200 km custam R$0,70
+            por km. Viagens acima de 200 km custam R$0,40 por km. O valor final
+            deve ser exibido de forma clara, simulando o funcionamento de um
+            sistema real de vendas de passagens.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>E - Cálculo do Preço da Passagem</h2>
+          <p>Distância da viagem (km):</p>
+          <input
+            type="number"
+            id="distancia"
+            placeholder="Informe a distância"
+          />
+          <button type="button" id="btnCalcular">Calcular</button>
+          <p class="resultado" id="resultadoPreco"></p>
+        </article>
       </section>
 
-      <section class="container">
-        <h2>F - Verificação de Ano Bissexto</h2>
-        <p>Digite um ano:</p>
-        <input type="number" id="ano" />
-        <button type="button" id="btnVerificarAno">Verificar</button>
-        <p class="resultado" id="resultadoAno"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade F - Descrição</h2>
+          <p>
+            O portal de curiosidades matemáticas WebYear Checker quer oferecer
+            aos usuários uma ferramenta para descobrir se um ano é bissexto.
+            Crie uma página onde o usuário insere um ano qualquer, e o site
+            verifica se esse ano é bissexto ou não, utilizando as regras do
+            calendário gregoriano. O sistema também deve garantir que o valor
+            informado seja um número inteiro positivo, mostrando uma mensagem de
+            erro se a entrada for inválida.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>F - Verificação de Ano Bissexto</h2>
+          <p>Digite um ano:</p>
+          <input type="number" id="ano" />
+          <button type="button" id="btnVerificarAno">Verificar</button>
+          <p class="resultado" id="resultadoAno"></p>
+        </article>
       </section>
 
-      <section class="container">
-        <h2>G - Verificação de Triângulo</h2>
-        <input type="number" id="lado1" placeholder="Lado A" />
-        <input type="number" id="lado2" placeholder="Lado B" />
-        <input type="number" id="lado3" placeholder="Lado C" />
-        <button type="button" id="btnVerificarTriangulo">Verificar</button>
-        <p class="resultado" id="resultadoTriangulo"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade G - Descrição</h2>
+          <p>
+            O site educativo TriangulaWeb precisa de uma página interativa onde
+            os usuários informam as medidas de três segmentos de reta. O sistema
+            então verifica e informa se esses segmentos podem formar um
+            triângulo, com base na regra matemática da desigualdade triangular.O
+            feedback deve ser claro e visual.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>G - Verificação de Triângulo</h2>
+          <input type="number" id="lado1" placeholder="Lado A" />
+          <input type="number" id="lado2" placeholder="Lado B" />
+          <input type="number" id="lado3" placeholder="Lado C" />
+          <button type="button" id="btnVerificarTriangulo">Verificar</button>
+          <p class="resultado" id="resultadoTriangulo"></p>
+        </article>
       </section>
 
-      <section class="container">
-        <h2>H - Cálculo com a Fórmula de Bhaskara</h2>
-        <input type="number" id="inputA" placeholder="a" />
-        <input type="number" id="inputB" placeholder="b" />
-        <input type="number" id="inputC" placeholder="c" />
-        <button type="button" id="btnCalcularBhaskara">Calcular</button>
-        <p class="resultado" id="resultadoBhaskara"></p>
+      <section class="card-atividade">
+        <article class="descricao">
+          <h2>Atividade H - Descrição</h2>
+          <p>
+            A plataforma educacional MathSolver Online quer disponibilizar uma
+            calculadora que ajude alunos a entenderem equações quadráticas. Crie
+            uma página que calcule as raízes da equação 𝑥²−6𝑥+5, utilizando os
+            conceitos da fórmula de Bhaskara, mas sem usar funções prontas. O
+            sistema deve exibir as raízes calculadas (x’ = 5 e x’’ = 1) e
+            explicar, se possível, o processo do cálculo.
+          </p>
+        </article>
+        <article class="atividade">
+          <h2>H - Cálculo com a Fórmula de Bhaskara</h2>
+          <input type="number" id="inputA" placeholder="a" />
+          <input type="number" id="inputB" placeholder="b" />
+          <input type="number" id="inputC" placeholder="c" />
+          <button type="button" id="btnCalcularBhaskara">Calcular</button>
+          <p class="resultado" id="resultadoBhaskara"></p>
+        </article>
       </section>
     </main>
 
