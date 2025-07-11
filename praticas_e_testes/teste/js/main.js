@@ -7,6 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
     return notas.reduce((soma, nota) => soma + nota, 0);
   }
 
+  // Função para verificar se o aluno já está na tabela
+  function alunoJaExiste(nome) {
+    const linhas = tabela.querySelectorAll("tr");
+    for (const linha of linhas) {
+      const nomeNaTabela = linha.querySelector("td")?.textContent?.trim();
+      if (nomeNaTabela && nomeNaTabela.toLowerCase() === nome.toLowerCase()) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   botaoAdicionar.addEventListener("click", () => {
     const nome = document.getElementById("nome").value.trim();
     const frequencia = parseInt(document.getElementById("frequencia").value);
@@ -15,12 +27,24 @@ document.addEventListener("DOMContentLoaded", () => {
       .value.split(",")
       .map((nota) => parseFloat(nota.trim()));
 
-   
+    // Verifica se o nome é composto (duas palavras ou mais)
     const nomeEhComposto =
       nome.split(" ").filter((palavra) => palavra.length > 0).length >= 2;
 
-    if (!nome || !nomeEhComposto || isNaN(frequencia) || notasInput.length !== 4 || notasInput.some((nota) => isNaN(nota)))
-        {alert("Por favor, preencha todos os campos corretamente. O nome deve ser composto e as notas válidas." );
+    if (
+      !nome ||
+      !nomeEhComposto ||
+      isNaN(frequencia) ||
+      notasInput.length !== 4 ||
+      notasInput.some((nota) => isNaN(nota))
+    ) {
+      alert("Por favor, preencha todos os campos corretamente. O nome deve ser composto e as notas válidas.");
+      return;
+    }
+
+    // Verifica se o aluno já existe na tabela
+    if (alunoJaExiste(nome)) {
+      alert("Já existe um aluno com esse nome na tabela.");
       return;
     }
 
@@ -45,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <td><button class="remove-button">Remover</button></td>
     `;
 
+    // Evento para remover a linha
     novaLinha.querySelector("button").addEventListener("click", () => {
       novaLinha.remove();
     });
