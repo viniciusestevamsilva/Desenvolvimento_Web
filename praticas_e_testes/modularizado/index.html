@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividades A até H</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <h1>Titulo</h1>
+      <p>conteudo</p>
+    </header>
+
+    <nav>
+      <ul>
+        <div class="menu-itens">
+          <li><a>Sobre Nós</a></li>
+          <li><a>Serviços</a></li>
+          <li><a>Projetos</a></li>
+          <li><a>Contato</a></li>
+        </div>
+        <div class="menu-botao">
+          <li>
+            <button type="button"><a>Cadastro</a></button>
+          </li>
+        </div>
+      </ul>
+    </nav>
+
+    <main class="secoes-horizontal">
+  <!-- Seção 1: Cadastro -->
+  <section class="container">
+    <article>
+      <h2>Cadastro</h2>
+      <div class="botoes-topo">
+        <button id="mostrarCadastro">Mostrar/Ocultar</button>
+        <button id="botaoTema">Trocar Tema</button>
+      </div>
+    </article>
+    <form action="">
+      <div class="campo">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" id="nome" placeholder="Ex.: João Silva"/>
+        <span id="nomeErro"></span>
+      </div>
+      <div class="campo">
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" min="0" placeholder="Ex.: 10"/>
+        <span id="idadeErro"></span>
+      </div>
+      <div class="campo">
+        <label for="frequencia">Insira sua frequência anual (%):</label>
+        <input type="number" name="frequencia" id="frequencia" min="0" max="100" placeholder="Ex.: 70"/>
+        <span id="frequenciaErro"></span>
+      </div>
+      <div class="campo">
+        <label for="notas">Insira suas notas (separadas por ','):</label>
+        <input type="text" name="notas" id="notas" placeholder="Ex.: 10,10,10,10"/>
+        <span id="notasErro"></span>
+      </div>
+      <button type="button" id="btnCadastrar">Cadastrar</button>
+      <span id="Erro"></span>
+    </form>
+  </section>
+
+  <!-- Seção 2: Conteúdo adicional -->
+  <section class="container">
+    <h2>Resultados</h2>
+    <p>Este espaço pode exibir uma tabela, gráfico ou outro conteúdo.</p>
+    <!-- Exemplo: tabela futura -->
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Frequência</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João Silva</td>
+          <td>16</td>
+          <td>85%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
